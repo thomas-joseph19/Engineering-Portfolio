@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Thomas Joseph | Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Explore mechanical design, manufacturing, robotics, and simulation projects by Thomas Joseph, UCF Mechanical Engineering student.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Thomas <span>Joseph</span></a>
+      
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-color: var(--bg-dark); color: var(--color-text-light); padding: var(--space-2xl) 0 var(--space-xl) 0; margin-top: var(--header-height);">
+    <div class="container">
+      <div class="hero-subtitle" style="color: var(--color-accent);">Portfolio</div>
+      <h1 class="hero-title" style="color: var(--color-text-light); margin-bottom: var(--space-xs);">Engineering Projects</h1>
+      <p style="color: var(--color-text-muted-light); max-width: 600px;">A detailed collection of mechanical design, robotics, fabrication, structural FEA, and research initiatives.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="filters-section" style="padding: var(--space-xl) 0 var(--space-md) 0;">
+    <div class="container">
+      <div class="filter-bar" style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-md);">
+        <button class="filter-btn active" data-category="all">All Projects</button>
+        <button class="filter-btn" data-category="Mechanical Design">Mechanical Design</button>
+        <button class="filter-btn" data-category="Manufacturing">Manufacturing</button>
+        <button class="filter-btn" data-category="Programming">Programming</button>
+        <button class="filter-btn" data-category="Research">Research</button>
+        <button class="filter-btn" data-category="Course Projects">Course Projects</button>
+        <button class="filter-btn" data-category="Personal Projects">Personal Projects</button>
+      </div>
+      
+      <!-- Project Cards Grid -->
+      <div id="projects-grid" class="project-grid">
+        <!-- Rendered by JavaScript -->
+        <div class="loading-state" style="text-align: center; padding: var(--space-3xl) 0; width: 100%;">
+          <i class="fas fa-cog fa-spin fa-3x" style="color: var(--color-accent); margin-bottom: var(--space-md);"></i>
+          <p class="text-muted">Loading projects database...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="copyright">
+        &copy; 2026 Thomas Joseph. All rights reserved. | UCF Mechanical Engineering
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/thomas-joseph19" target="_blank" class="footer-link" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:email@ucf.edu" class="footer-link" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
