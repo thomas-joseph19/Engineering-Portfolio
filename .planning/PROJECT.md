@@ -35,15 +35,17 @@ Adding a new engineering project to the portfolio should require nothing more th
 - [x] About page with editable biography, education, experience, interests, goals, profile image (Validated in Phase 3)
 - [x] Contact page with email, LinkedIn, GitHub links, optional resume button (Validated in Phase 3)
 
+- [x] Featured Projects section on homepage (auto-populated from project metadata) (Validated in Phase 4)
+- [x] Engineering Skills section on homepage (auto-generated from project tags) (Validated in Phase 4)
+- [x] Career Timeline on homepage (auto-generated from project dates) (Validated in Phase 4)
+- [x] Client-side search (titles, descriptions, skills, software, tags, categories) (Validated in Phase 4)
+- [x] Well-documented code with comments explaining how to add/edit content (Validated in Phase 4)
+
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Featured Projects section on homepage (auto-populated from project metadata)
-- [ ] Engineering Skills section on homepage (auto-generated from project tags)
-- [ ] Career Timeline on homepage (auto-generated from project dates)
-- [ ] Client-side search (titles, descriptions, skills, software, tags, categories)
-- [ ] Well-documented code with comments explaining how to add/edit content
+(All active requirements satisfied!)
 
 ### Out of Scope
 
