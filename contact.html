@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Thomas Joseph</title>
+  <meta name="description" content="Get in touch with Thomas Joseph, UCF Mechanical Engineering student.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Thomas <span>Joseph</span></a>
+      
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section" style="padding: var(--space-3xl) 0 var(--space-xl) 0; margin-top: var(--header-height);">
+    <div class="container" style="max-width: 800px;">
+      <div class="contact-card" style="background-color: var(--bg-surface); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: var(--space-2xl); box-shadow: var(--shadow-md); text-align: center; margin-bottom: var(--space-xl);">
+        <h1 style="font-weight: 700; margin-bottom: var(--space-xs);">Get in Touch</h1>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); font-size: 1.05rem;">Feel free to reach out for internship opportunities, project collaborations, or technical discussions.</p>
+        
+        <!-- Social & Email Channels -->
+        <div class="contact-channels" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-2xl);">
+          
+          <a id="contact-email" href="" class="channel-box" style="display: block; padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: var(--border-radius); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);">
+            <i class="fas fa-envelope fa-2x" style="color: var(--color-accent); margin-bottom: var(--space-sm);"></i>
+            <h4 style="margin-bottom: var(--space-xs); font-weight: 600;">Email</h4>
+            <p id="contact-email-text" style="color: var(--color-text-muted); font-size: 0.85rem; word-break: break-all;">Loading...</p>
+          </a>
+          
+          <a id="contact-linkedin" href="" target="_blank" class="channel-box" style="display: block; padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: var(--border-radius); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);">
+            <i class="fab fa-linkedin fa-2x" style="color: var(--color-accent); margin-bottom: var(--space-sm);"></i>
+            <h4 style="margin-bottom: var(--space-xs); font-weight: 600;">LinkedIn</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.85rem;">thomas-joseph-ucf</p>
+          </a>
+          
+          <a id="contact-github" href="" target="_blank" class="channel-box" style="display: block; padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: var(--border-radius); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);">
+            <i class="fab fa-github fa-2x" style="color: var(--color-accent); margin-bottom: var(--space-sm);"></i>
+            <h4 style="margin-bottom: var(--space-xs); font-weight: 600;">GitHub</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.85rem;">thomas-joseph19</p>
+          </a>
+          
+        </div>
+
+        <div style="border-top: 1px solid var(--color-border); padding-top: var(--space-xl);">
+          <p style="margin-bottom: var(--space-md); color: var(--color-text-muted); font-size: 0.95rem;">Interested in offline review? Get a printable copy of my curriculum vitae.</p>
+          <a id="contact-resume-btn" href="" download class="btn btn-secondary" style="font-weight: 500;"><i class="fas fa-file-pdf" style="margin-right: 8px; color: red;"></i> Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="copyright">
+        &copy; 2026 Thomas Joseph. All rights reserved. | UCF Mechanical Engineering
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/thomas-joseph19" target="_blank" class="footer-link" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:email@ucf.edu" class="footer-link" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

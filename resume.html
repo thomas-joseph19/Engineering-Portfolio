@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Thomas Joseph</title>
+  <meta name="description" content="View and download the mechanical engineering resume of Thomas Joseph, student at UCF.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Thomas <span>Joseph</span></a>
+      
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Resume Section -->
+  <section class="resume-section" style="padding: var(--space-3xl) 0 var(--space-xl) 0; margin-top: var(--header-height);">
+    <div class="container">
+      <div class="resume-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-md);">
+        <div>
+          <h1 style="font-weight: 700; margin-bottom: var(--space-xs);">Curriculum Vitae</h1>
+          <p id="resume-last-updated" style="color: var(--color-text-muted); font-size: 0.9rem;">Last updated: Loading...</p>
+        </div>
+        <a id="resume-download-btn" href="" download class="btn btn-primary"><i class="fas fa-download" style="margin-right: 8px;"></i> Download PDF</a>
+      </div>
+
+      <!-- PDF Frame Container -->
+      <div class="resume-viewer-container" style="background-color: var(--bg-surface); border: 1px solid var(--color-border); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: var(--space-2xl);">
+        <iframe id="resume-iframe" src="" style="width: 100%; height: 850px; border: none; display: block;">
+          This browser does not support PDF embedding. Please download the resume using the button above.
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="copyright">
+        &copy; 2026 Thomas Joseph. All rights reserved. | UCF Mechanical Engineering
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/thomas-joseph19" target="_blank" class="footer-link" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:email@ucf.edu" class="footer-link" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

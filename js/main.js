@@ -345,6 +345,45 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
+  // 6. Resume Page Renderer
+  const resumeIframe = document.getElementById('resume-iframe');
+  if (resumeIframe) {
+    fetch('data/profile.json')
+      .then(res => res.json())
+      .then(profile => {
+        resumeIframe.src = profile.resume.path;
+        document.getElementById('resume-last-updated').innerText = `Last updated: ${profile.resume.lastUpdated}`;
+        document.getElementById('resume-download-btn').href = profile.resume.path;
+      })
+      .catch(err => {
+        console.error('Error rendering resume page:', err);
+      });
+  }
+
+  // 7. Contact Page Renderer
+  const contactEmail = document.getElementById('contact-email');
+  if (contactEmail) {
+    fetch('data/profile.json')
+      .then(res => res.json())
+      .then(profile => {
+        contactEmail.href = `mailto:${profile.contact.email}`;
+        document.getElementById('contact-email-text').innerText = profile.contact.email;
+        
+        const linkedinLink = document.getElementById('contact-linkedin');
+        linkedinLink.href = profile.contact.linkedin;
+        linkedinLink.querySelector('p').innerText = profile.contact.linkedin.split('/').pop();
+        
+        const githubLink = document.getElementById('contact-github');
+        githubLink.href = profile.contact.github;
+        githubLink.querySelector('p').innerText = profile.contact.github.split('/').pop();
+        
+        document.getElementById('contact-resume-btn').href = profile.resume.path;
+      })
+      .catch(err => {
+        console.error('Error rendering contact page:', err);
+      });
+  }
+
   // Lightbox Modal functionality
   const lightbox = document.createElement('div');
   lightbox.className = 'lightbox';
