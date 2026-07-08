@@ -678,6 +678,10 @@ footer {
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr !important;
+  }
+
   .gallery-col-2, .gallery-col-3 {
     grid-template-columns: 1fr;
   }

@@ -290,6 +290,61 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 5. About Page Renderer
+  const aboutBio = document.getElementById('about-bio');
+  if (aboutBio) {
+    fetch('data/profile.json')
+      .then(res => res.json())
+      .then(profile => {
+        document.getElementById('profile-img').src = profile.profileImage;
+        document.getElementById('profile-tagline').innerText = profile.tagline;
+        aboutBio.innerHTML = marked.parse(profile.bio);
+
+        // Render education
+        const eduContainer = document.getElementById('about-education');
+        eduContainer.innerHTML = profile.education.map(edu => `
+          <div style="margin-bottom: var(--space-sm);">
+            <div style="font-weight: 600; font-size: 0.95rem;">${edu.degree}</div>
+            <div style="font-size: 0.85rem; color: var(--color-text-muted);">${edu.school}</div>
+            <div style="font-size: 0.8rem; font-weight: 500; margin-top: 2px;">GPA: ${edu.gpa}</div>
+            <div style="font-size: 0.8rem; color: var(--color-text-muted);">${edu.date}</div>
+            <div style="font-size: 0.8rem; font-style: italic; color: var(--color-text-muted); margin-top: 4px;">${edu.details}</div>
+          </div>
+        `).join('');
+
+        // Render interests
+        const interestsContainer = document.getElementById('about-interests');
+        interestsContainer.innerHTML = profile.interests.map(interest => `
+          <span class="badge" style="margin-bottom: 4px; margin-right: 4px;">${interest}</span>
+        `).join('');
+
+        // Render experience timeline
+        const expContainer = document.getElementById('about-experience');
+        expContainer.innerHTML = profile.experience.map(exp => `
+          <div class="exp-item" style="margin-bottom: var(--space-lg); border-left: 2px solid var(--color-accent); padding-left: var(--space-md); margin-left: 4px;">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-xs);">
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin: 0;">${exp.role}</h4>
+              <span style="font-size: 0.8rem; font-weight: 500; color: var(--color-accent); background-color: var(--color-accent-light); padding: 2px 6px; border-radius: var(--border-radius);">${exp.date}</span>
+            </div>
+            <div style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted); margin-bottom: var(--space-xs);">${exp.company} &bull; ${exp.location}</div>
+            <ul style="padding-left: var(--space-md); font-size: 0.9rem; line-height: 1.5; color: var(--color-text-muted);">
+              ${exp.bullets.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+          </div>
+        `).join('');
+
+        // Render career goals
+        const goalsContainer = document.getElementById('about-goals');
+        goalsContainer.innerHTML = profile.goals.map(goal => `
+          <li style="margin-bottom: var(--space-sm);">${goal}</li>
+        `).join('');
+      })
+      .catch(err => {
+        console.error('Error rendering about page:', err);
+        aboutBio.innerHTML = `<p style="color: red;">Failed to load profile data.</p>`;
+      });
+  }
+
   // Lightbox Modal functionality
   const lightbox = document.createElement('div');
   lightbox.className = 'lightbox';

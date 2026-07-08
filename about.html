@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Thomas Joseph</title>
+  <meta name="description" content="Learn more about Thomas Joseph, mechanical engineering student at UCF, including research and academic experience.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Client-Side Libraries: Marked (for parsing biography markdown) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Thomas <span>Joseph</span></a>
+      
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section" style="padding: var(--space-3xl) 0 var(--space-xl) 0; margin-top: var(--header-height);">
+    <div class="container">
+      <div class="about-layout" style="display: grid; grid-template-columns: 320px 1fr; gap: var(--space-2xl); align-items: start;">
+        
+        <!-- Left Sidebar: Profile Details -->
+        <aside class="profile-card" style="background-color: var(--bg-surface); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: var(--space-lg); box-shadow: var(--shadow-sm); text-align: center;">
+          <img id="profile-img" src="" alt="Thomas Joseph" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-accent); margin: 0 auto var(--space-md) auto; display: block;">
+          <h2 id="profile-name" style="font-size: 1.5rem; margin-bottom: var(--space-xs);">Thomas Joseph</h2>
+          <p id="profile-tagline" style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--space-md);"></p>
+          
+          <div style="border-top: 1px solid var(--color-border); margin: var(--space-md) 0; padding-top: var(--space-md); text-align: left;">
+            <h4 style="margin-bottom: var(--space-sm); font-size: 0.85rem; text-transform: uppercase; color: var(--color-accent); letter-spacing: 0.05em;">Education</h4>
+            <div id="about-education"></div>
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border); margin: var(--space-md) 0; padding-top: var(--space-md); text-align: left;">
+            <h4 style="margin-bottom: var(--space-sm); font-size: 0.85rem; text-transform: uppercase; color: var(--color-accent); letter-spacing: 0.05em;">Interests</h4>
+            <div id="about-interests" class="card-tags"></div>
+          </div>
+        </aside>
+
+        <!-- Right Main Panel: Biography and Experience -->
+        <main class="about-main">
+          <div class="bio-panel" style="background-color: var(--bg-surface); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: var(--space-xl); box-shadow: var(--shadow-sm); margin-bottom: var(--space-lg);">
+            <h2 style="margin-bottom: var(--space-md); font-weight: 700;">Biography</h2>
+            <div id="about-bio" class="markdown-body" style="font-size: 1.05rem; color: var(--color-text);">
+              <p>Loading biography...</p>
+            </div>
+          </div>
+
+          <div class="experience-panel" style="background-color: var(--bg-surface); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: var(--space-xl); box-shadow: var(--shadow-sm); margin-bottom: var(--space-lg);">
+            <h2 style="margin-bottom: var(--space-lg); font-weight: 700;">Professional Experience</h2>
+            <div id="about-experience">
+              <p class="text-muted">Loading experience timeline...</p>
+            </div>
+          </div>
+
+          <div class="goals-panel" style="background-color: var(--bg-surface); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: var(--space-xl); box-shadow: var(--shadow-sm);">
+            <h2 style="margin-bottom: var(--space-md); font-weight: 700;">Career Goals</h2>
+            <ul id="about-goals" style="padding-left: var(--space-lg); line-height: 1.7; color: var(--color-text);">
+              <!-- Rendered by JS -->
+            </ul>
+          </div>
+        </main>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="copyright">
+        &copy; 2026 Thomas Joseph. All rights reserved. | UCF Mechanical Engineering
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/thomas-joseph19" target="_blank" class="footer-link" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:email@ucf.edu" class="footer-link" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
