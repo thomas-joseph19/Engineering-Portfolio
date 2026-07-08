@@ -20,10 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const header = document.querySelector('header');
   const navToggle = document.querySelector('.nav-toggle');
+  const hasHero = document.querySelector('.hero') !== null;
   
-  // 1. Scroll Handler for Header transparency
+  // 1. Scroll Handler for Header transparency (only on pages with a hero section)
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (!hasHero || window.scrollY > 50) {
       header.classList.add('opaque');
     } else {
       header.classList.remove('opaque');
@@ -31,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   
   window.addEventListener('scroll', handleScroll);
-  // Initial check on load in case page is refreshed while scrolled down
   handleScroll();
 
   // 2. Mobile Nav Hamburger Toggle
@@ -209,8 +209,20 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `;
         
+        // Clean leading h1 heading to prevent double title rendering
+        let cleanBody = bodyMarkdown.trim();
+        if (cleanBody.startsWith('#')) {
+          const firstLineEnd = cleanBody.indexOf('\n');
+          if (firstLineEnd !== -1) {
+            const firstLine = cleanBody.substring(0, firstLineEnd).trim();
+            if (firstLine.startsWith('# ') || firstLine === '#') {
+              cleanBody = cleanBody.substring(firstLineEnd).trim();
+            }
+          }
+        }
+        
         // Render Body
-        const parsedHtml = marked.parse(bodyMarkdown);
+        const parsedHtml = marked.parse(cleanBody);
         
         projectViewer.innerHTML = headerHtml + `<div class="markdown-body">${parsedHtml}</div>`;
         

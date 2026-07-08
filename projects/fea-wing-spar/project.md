@@ -22,5 +22,5 @@ This study optimizes composite layup orientations (0/45/90 degrees) of carbon fi
 ## Simulation Results
 The composite spar optimization yielded a total weight reduction of 22.4% while maintaining structural integrity.
 
-![2-col: Deflection under load case](gallery/deflection.jpg)
-![2-col: Failure criteria plot](gallery/failure.jpg)
+![2-col: Aerospace Structure Mesh](gallery/meshing.jpg)
+![2-col: Bending Stress Safety Factor](gallery/stress.jpg)
