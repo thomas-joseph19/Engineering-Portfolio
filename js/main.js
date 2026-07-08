@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectViewer.innerHTML = headerHtml + `<div class="markdown-body">${parsedHtml}</div>`;
         
         // Post-render processing: image layouts and lightbox
-        processProjectImages();
+        processProjectImages(projectSlug);
       })
       .catch(err => {
         console.error('Error loading project:', err);
@@ -231,8 +231,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Helper functions for image grouping and lightbox
-  function processProjectImages() {
+  function processProjectImages(slug) {
     const images = Array.from(document.querySelectorAll('.markdown-body img'));
+    
+    // Rewrite relative src paths to point to project directory
+    images.forEach(img => {
+      const src = img.getAttribute('src');
+      if (src && !src.startsWith('http') && !src.startsWith('/') && !src.startsWith('data:')) {
+        img.src = `projects/${slug}/${src}`;
+      }
+    });
+
     const rows = [];
     
     // Group consecutive images with 2-col or 3-col prefixes
