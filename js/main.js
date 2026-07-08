@@ -1,4 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Central footer links dynamic sync
+  const updateFooterLinks = (profile) => {
+    const linkedinIcon = document.querySelector('footer a[aria-label="LinkedIn"]');
+    if (linkedinIcon) linkedinIcon.href = profile.contact.linkedin;
+    
+    const emailIcon = document.querySelector('footer a[aria-label="Email"]');
+    if (emailIcon) emailIcon.href = `mailto:${profile.contact.email}`;
+    
+    const githubIcon = document.querySelector('footer a[aria-label="GitHub"]');
+    if (githubIcon) githubIcon.href = profile.contact.github;
+  };
+
+  fetch('data/profile.json')
+    .then(res => res.json())
+    .then(profile => {
+      updateFooterLinks(profile);
+    })
+    .catch(err => console.warn('Could not sync footer links:', err));
+
   const header = document.querySelector('header');
   const navToggle = document.querySelector('.nav-toggle');
   
