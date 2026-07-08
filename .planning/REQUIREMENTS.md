@@ -62,22 +62,22 @@
 
 ### Resume Page
 
-- [ ] **RESM-01**: Resume page embeds a PDF viewer displaying the current resume
-- [ ] **RESM-02**: Download button allows visitor to save the PDF
-- [ ] **RESM-03**: Replacing the resume requires only replacing one PDF file
-- [ ] **RESM-04**: Last-updated date displays on the resume page
+- [x] **RESM-01**: Resume page embeds a PDF viewer displaying the current resume
+- [x] **RESM-02**: Download button allows visitor to save the PDF
+- [x] **RESM-03**: Replacing the resume requires only replacing one PDF file
+- [x] **RESM-04**: Last-updated date displays on the resume page
 
 ### About Page
 
-- [ ] **ABUT-01**: About page displays biography, education, experience, engineering interests, and career goals
-- [ ] **ABUT-02**: Profile image displayed on About page
-- [ ] **ABUT-03**: All About content stored in an editable data file (markdown or JSON)
+- [x] **ABUT-01**: About page displays biography, education, experience, engineering interests, and career goals
+- [x] **ABUT-02**: Profile image displayed on About page
+- [x] **ABUT-03**: All About content stored in an editable data file (markdown or JSON)
 
 ### Contact Page
 
-- [ ] **CTCT-01**: Contact page displays email, LinkedIn, and GitHub links
-- [ ] **CTCT-02**: Optional resume download button on Contact page
-- [ ] **CTCT-03**: No contact form — links only
+- [x] **CTCT-01**: Contact page displays email, LinkedIn, and GitHub links
+- [x] **CTCT-02**: Optional resume download button on Contact page
+- [x] **CTCT-03**: No contact form — links only
 
 ## v2 Requirements
 
@@ -145,16 +145,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SRCH-01 | Phase 4 | Pending |
 | SRCH-02 | Phase 4 | Pending |
 | SRCH-03 | Phase 4 | Pending |
-| RESM-01 | Phase 3 | Pending |
-| RESM-02 | Phase 3 | Pending |
-| RESM-03 | Phase 3 | Pending |
-| RESM-04 | Phase 3 | Pending |
-| ABUT-01 | Phase 3 | Pending |
-| ABUT-02 | Phase 3 | Pending |
-| ABUT-03 | Phase 3 | Pending |
-| CTCT-01 | Phase 3 | Pending |
-| CTCT-02 | Phase 3 | Pending |
-| CTCT-03 | Phase 3 | Pending |
+| RESM-01 | Phase 3 | Complete |
+| RESM-02 | Phase 3 | Complete |
+| RESM-03 | Phase 3 | Complete |
+| RESM-04 | Phase 3 | Complete |
+| ABUT-01 | Phase 3 | Complete |
+| ABUT-02 | Phase 3 | Complete |
+| ABUT-03 | Phase 3 | Complete |
+| CTCT-01 | Phase 3 | Complete |
+| CTCT-02 | Phase 3 | Complete |
+| CTCT-03 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 44 total

@@ -12,7 +12,7 @@ Build a static GitHub Pages engineering portfolio from foundation to polish. Sta
 
 - [x] **Phase 1: Site Foundation & Design System** - Core HTML structure, CSS design system, navigation, responsive layout, and homepage (completed 2026-07-08)
 - [x] **Phase 2: Content Engine & Project Pages** - Markdown parser, project page generator, image gallery system, and projects listing (completed 2026-07-08)
-- [ ] **Phase 3: Secondary Pages & Resume** - About, Resume, and Contact pages with editable content files
+- [x] **Phase 3: Secondary Pages & Resume** - About, Resume, and Contact pages with editable content files (completed 2026-07-08)
 - [ ] **Phase 4: Search, Polish & Documentation** - Client-side search, homepage dynamic sections, performance optimization, and contributor documentation
 
 ## Phase Details
@@ -94,5 +94,5 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Site Foundation & Design System | 0/3 | Complete    | 2026-07-08 |
 | 2. Content Engine & Project Pages | 0/3 | Complete    | 2026-07-08 |
-| 3. Secondary Pages & Resume | 0/2 | Not started | - |
+| 3. Secondary Pages & Resume | 0/2 | Complete    | 2026-07-08 |
 | 4. Search, Polish & Documentation | 0/3 | Not started | - |
