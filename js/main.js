@@ -132,21 +132,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (match) {
           const yamlContent = match[1];
           bodyMarkdown = match[2];
-          // Simple frontmatter parser
-          yamlContent.split('\n').forEach(line => {
-            const parts = line.split(':');
-            if (parts.length >= 2) {
-              const key = parts[0].trim();
-              const value = parts.slice(1).join(':').trim();
-              
-              // Handle tags array
-              if (key === 'tags') {
-                meta[key] = value.replace(/[\[\]]/g, '').split(',').map(t => t.trim());
-              } else {
-                meta[key] = value.replace(/^['"]|['"]$/g, ''); // strip quotes
+          try {
+            meta = jsyaml.load(yamlContent) || {};
+          } catch (e) {
+            console.error('YAML frontmatter parsing failed, falling back:', e);
+            yamlContent.split('\n').forEach(line => {
+              const parts = line.split(':');
+              if (parts.length >= 2) {
+                const key = parts[0].trim();
+                const value = parts.slice(1).join(':').trim();
+                
+                // Handle tags array
+                if (key === 'tags') {
+                  meta[key] = value.replace(/[\[\]]/g, '').split(',').map(t => t.trim());
+                } else {
+                  meta[key] = value.replace(/^['"]|['"]$/g, ''); // strip quotes
+                }
               }
-            }
-          });
+            });
+          }
         }
         
         // Render Header Meta
