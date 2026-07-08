@@ -406,6 +406,82 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
+  // 8. Homepage Dynamic Widgets
+  const featuredGrid = document.getElementById('featured-grid');
+  const homepageSkills = document.getElementById('homepage-skills');
+  const timelineContainer = document.getElementById('timeline-container');
+  
+  if (featuredGrid || homepageSkills || timelineContainer) {
+    fetch('projects/projects.json')
+      .then(res => res.json())
+      .then(projects => {
+        // 1) Render Featured Projects
+        if (featuredGrid) {
+          const featured = projects.filter(p => p.featured === true).slice(0, 3);
+          featuredGrid.innerHTML = '';
+          if (featured.length === 0) {
+            featuredGrid.innerHTML = '<p class="text-muted">No featured projects selected.</p>';
+          } else {
+            featured.forEach(project => {
+              const card = document.createElement('div');
+              card.className = 'project-card';
+              card.innerHTML = `
+                <img src="${project.thumbnail}" alt="${project.title}" class="card-thumbnail" onerror="this.src='https://placehold.co/600x400/0f172a/3b82f6?text=${encodeURIComponent(project.title)}'">
+                <div class="card-content">
+                  <div class="card-category">${project.category}</div>
+                  <h3 class="card-title"><a href="project.html?project=${project.slug}">${project.title}</a></h3>
+                  <p class="card-summary">${project.summary}</p>
+                  <div class="card-footer">
+                    <div class="card-tags">
+                      ${project.tags.slice(0, 3).map(tag => `<span class="badge">${tag}</span>`).join('')}
+                    </div>
+                    <span class="card-date">${new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}</span>
+                  </div>
+                </div>
+              `;
+              featuredGrid.appendChild(card);
+            });
+          }
+        }
+
+        // 2) Aggregate and Render Unique Skills
+        if (homepageSkills) {
+          const allTags = new Set();
+          projects.forEach(p => p.tags.forEach(tag => allTags.add(tag)));
+          homepageSkills.innerHTML = Array.from(allTags).map(tag => `
+            <span class="badge" style="font-size: 0.9rem; padding: var(--space-xs) var(--space-sm);">${tag}</span>
+          `).join('');
+        }
+
+        // 3) Chronological Timeline (oldest to newest)
+        if (timelineContainer) {
+          const sortedChronological = [...projects].sort((a, b) => new Date(a.date) - new Date(b.date));
+          timelineContainer.innerHTML = sortedChronological.map(project => `
+            <div class="timeline-item" style="position: relative; margin-bottom: var(--space-xl);">
+              <!-- Indicator Node dot -->
+              <div class="timeline-node" style="position: absolute; left: calc(-1 * var(--space-xl) - 6px); top: 6px; width: 12px; height: 12px; border-radius: 50%; background-color: var(--color-accent); border: 2px solid var(--bg-surface);"></div>
+              <div style="font-size: 0.8rem; font-weight: 600; color: var(--color-accent); margin-bottom: 2px;">
+                ${new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+              </div>
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin: 0 0 var(--space-xs) 0;">
+                <a href="project.html?project=${project.slug}" style="text-decoration: none; color: var(--color-text); transition: color var(--transition-fast);">${project.title}</a>
+              </h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin: 0 0 var(--space-xs) 0; max-width: 700px;">
+                ${project.summary}
+              </p>
+              <div class="card-tags">
+                <span class="badge" style="background-color: var(--color-border); color: var(--color-text-muted);">${project.category}</span>
+                ${project.tags.slice(0, 2).map(tag => `<span class="badge">${tag}</span>`).join('')}
+              </div>
+            </div>
+          `).join('');
+        }
+      })
+      .catch(err => {
+        console.error('Error rendering homepage widgets:', err);
+      });
+  }
+
   // Lightbox Modal functionality
   const lightbox = document.createElement('div');
   lightbox.className = 'lightbox';
