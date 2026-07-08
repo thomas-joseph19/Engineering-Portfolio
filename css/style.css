@@ -475,6 +475,11 @@ footer {
   color: #1d4ed8;
 }
 
+#project-search:focus {
+  border-color: var(--color-accent) !important;
+  box-shadow: 0 0 0 2px var(--color-accent-light);
+}
+
 /* --- Filter Buttons --- */
 .filter-btn {
   background: none;

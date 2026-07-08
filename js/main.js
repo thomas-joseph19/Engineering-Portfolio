@@ -41,21 +41,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Projects Page Card Listing & Filter Logic
   const projectsGrid = document.getElementById('projects-grid');
   if (projectsGrid) {
+    let currentCategory = 'all';
+    let searchQuery = '';
     let projectsData = [];
     
-    const renderProjects = (filterCategory = 'all') => {
+    const renderProjects = () => {
       projectsGrid.innerHTML = '';
       
-      const filtered = filterCategory === 'all' 
-        ? projectsData 
-        : projectsData.filter(p => p.category.toLowerCase() === filterCategory.toLowerCase());
+      const filtered = projectsData.filter(project => {
+        const matchesCategory = currentCategory === 'all' || 
+          project.category.toLowerCase() === currentCategory.toLowerCase();
+          
+        const query = searchQuery.trim().toLowerCase();
+        const matchesSearch = !query || 
+          project.title.toLowerCase().includes(query) ||
+          project.summary.toLowerCase().includes(query) ||
+          project.tags.some(tag => tag.toLowerCase().includes(query)) ||
+          project.category.toLowerCase().includes(query);
+          
+        return matchesCategory && matchesSearch;
+      });
         
       if (filtered.length === 0) {
         projectsGrid.innerHTML = `
           <div class="placeholder-box" style="width: 100%; grid-column: 1/-1; margin: var(--space-xl) 0;">
             <i class="fas fa-search fa-3x" style="color: var(--color-accent); margin-bottom: var(--space-md);"></i>
             <h3>No projects found</h3>
-            <p>Try selecting a different category or check back later.</p>
+            <p>Try selecting a different category or search query.</p>
           </div>
         `;
         return;
@@ -100,9 +112,19 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         filterButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        renderProjects(btn.dataset.category);
+        currentCategory = btn.dataset.category;
+        renderProjects();
       });
     });
+
+    // Wire up search input
+    const searchInput = document.getElementById('project-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        renderProjects();
+      });
+    }
   }
 
   // 4. Project Viewer Page Logic & Markdown Engine
