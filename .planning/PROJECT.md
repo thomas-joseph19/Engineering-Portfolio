@@ -14,16 +14,18 @@ Adding a new engineering project to the portfolio should require nothing more th
 
 <!-- Shipped and confirmed valuable. -->
 
-(None yet — ship to validate)
+- [x] Static site compatible with GitHub Pages (no backend, no build step, no server) (Validated in Phase 1)
+- [x] Vanilla HTML/CSS/JS — JavaScript reads markdown at runtime (Validated in Phase 1)
+- [x] Navigation: Home, Projects, About, Resume, Contact (consistent across all pages) (Validated in Phase 1)
+- [x] Homepage with hero section (name, ME student, UCF, personal statement, Resume + View Projects buttons) (Validated in Phase 1)
+- [x] Cool technical visual style (slate, steel blue, white palette — precision engineering feel) (Validated in Phase 1)
+- [x] Responsive layout (desktop, tablet, mobile) (Validated in Phase 1)
+- [x] Fast loading with lazy-loaded images and minimal JavaScript (Validated in Phase 1)
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Static site compatible with GitHub Pages (no backend, no build step, no server)
-- [ ] Vanilla HTML/CSS/JS — JavaScript reads markdown at runtime
-- [ ] Navigation: Home, Projects, About, Resume, Contact (consistent across all pages)
-- [ ] Homepage with hero section (name, ME student, UCF, personal statement, Resume + View Projects buttons)
 - [ ] Featured Projects section on homepage (auto-populated from project metadata)
 - [ ] Engineering Skills section on homepage (auto-generated from project tags)
 - [ ] Career Timeline on homepage (auto-generated from project dates)
@@ -40,10 +42,6 @@ Adding a new engineering project to the portfolio should require nothing more th
 - [ ] Resume page with embedded PDF, download button, easy PDF replacement, last-updated date
 - [ ] About page with editable biography, education, experience, interests, goals, profile image
 - [ ] Contact page with email, LinkedIn, GitHub links, optional resume button
-- [ ] Cool technical visual style (slate, steel blue, white palette — precision engineering feel)
-- [ ] Clean, minimal, professional design with excellent typography and whitespace
-- [ ] Responsive layout (desktop, tablet, mobile)
-- [ ] Fast loading with lazy-loaded images and minimal JavaScript
 - [ ] Well-documented code with comments explaining how to add/edit content
 - [ ] Project template included for easy copying
 
