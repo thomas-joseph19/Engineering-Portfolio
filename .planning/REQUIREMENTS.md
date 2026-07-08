@@ -25,34 +25,34 @@
 
 ### Projects Listing
 
-- [ ] **PROJ-01**: Projects page displays all projects as cards with thumbnail, title, category, summary, date, and tags
-- [ ] **PROJ-02**: Projects auto-sort by newest completion date first
-- [ ] **PROJ-03**: Filter bar supports categories: Mechanical Design, Manufacturing, Programming, Research, Course Projects, Personal Projects
-- [ ] **PROJ-04**: Clicking a project card navigates to that project's dedicated page
+- [x] **PROJ-01**: Projects page displays all projects as cards with thumbnail, title, category, summary, date, and tags
+- [x] **PROJ-02**: Projects auto-sort by newest completion date first
+- [x] **PROJ-03**: Filter bar supports categories: Mechanical Design, Manufacturing, Programming, Research, Course Projects, Personal Projects
+- [x] **PROJ-04**: Clicking a project card navigates to that project's dedicated page
 
 ### Project Pages
 
-- [ ] **PAGE-01**: Each project has its own dedicated page generated from a Markdown file with YAML frontmatter
-- [ ] **PAGE-02**: Project pages render all markdown content including headings, paragraphs, lists, code blocks, and links
-- [ ] **PAGE-03**: Project sections are fully optional — page renders only the sections present in the markdown file
-- [ ] **PAGE-04**: Suggested sections supported: Overview, Objectives, Requirements, Concept Development, Engineering Decisions, CAD Development, Manufacturing, Testing, Lessons Learned, Future Improvements
+- [x] **PAGE-01**: Each project has its own dedicated page generated from a Markdown file with YAML frontmatter
+- [x] **PAGE-02**: Project pages render all markdown content including headings, paragraphs, lists, code blocks, and links
+- [x] **PAGE-03**: Project sections are fully optional — page renders only the sections present in the markdown file
+- [x] **PAGE-04**: Suggested sections supported: Overview, Objectives, Requirements, Concept Development, Engineering Decisions, CAD Development, Manufacturing, Testing, Lessons Learned, Future Improvements
 
 ### Project Images
 
-- [ ] **IMG-01**: Projects support unlimited images embedded via markdown syntax
-- [ ] **IMG-02**: Image layouts include single image, two-column grid, three-column grid, and full-width
-- [ ] **IMG-03**: Images display optional captions
-- [ ] **IMG-04**: Clicking an image opens fullscreen lightbox viewer
-- [ ] **IMG-05**: Images lazy-load for performance
-- [ ] **IMG-06**: Images resize responsively across screen sizes
+- [x] **IMG-01**: Projects support unlimited images embedded via markdown syntax
+- [x] **IMG-02**: Image layouts include single image, two-column grid, three-column grid, and full-width
+- [x] **IMG-03**: Images display optional captions
+- [x] **IMG-04**: Clicking an image opens fullscreen lightbox viewer
+- [x] **IMG-05**: Images lazy-load for performance
+- [x] **IMG-06**: Images resize responsively across screen sizes
 
 ### Content System
 
-- [ ] **CONT-01**: Project folder structure: `projects/<slug>/project.md`, `thumbnail.jpg`, `gallery/`, `documents/`
-- [ ] **CONT-02**: Adding a project requires only creating a new folder with a markdown file — no code editing
-- [ ] **CONT-03**: YAML frontmatter in each project.md defines: title, category, date, featured, tags, thumbnail, summary
-- [ ] **CONT-04**: A project template folder with example project.md is included for easy copying
-- [ ] **CONT-05**: A projects index file (projects.json or equivalent) is auto-generated or manually maintained to list all projects
+- [x] **CONT-01**: Project folder structure: `projects/<slug>/project.md`, `thumbnail.jpg`, `gallery/`, `documents/`
+- [x] **CONT-02**: Adding a project requires only creating a new folder with a markdown file — no code editing
+- [x] **CONT-03**: YAML frontmatter in each project.md defines: title, category, date, featured, tags, thumbnail, summary
+- [x] **CONT-04**: A project template folder with example project.md is included for easy copying
+- [x] **CONT-05**: A projects index file (projects.json or equivalent) is auto-generated or manually maintained to list all projects
 
 ### Search
 
@@ -123,25 +123,25 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-03 | Phase 4 | Pending |
 | HOME-04 | Phase 4 | Pending |
 | HOME-05 | Phase 4 | Pending |
-| PROJ-01 | Phase 2 | Pending |
-| PROJ-02 | Phase 2 | Pending |
-| PROJ-03 | Phase 2 | Pending |
-| PROJ-04 | Phase 2 | Pending |
-| PAGE-01 | Phase 2 | Pending |
-| PAGE-02 | Phase 2 | Pending |
-| PAGE-03 | Phase 2 | Pending |
-| PAGE-04 | Phase 2 | Pending |
-| IMG-01 | Phase 2 | Pending |
-| IMG-02 | Phase 2 | Pending |
-| IMG-03 | Phase 2 | Pending |
-| IMG-04 | Phase 2 | Pending |
-| IMG-05 | Phase 2 | Pending |
-| IMG-06 | Phase 2 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
+| PROJ-01 | Phase 2 | Complete |
+| PROJ-02 | Phase 2 | Complete |
+| PROJ-03 | Phase 2 | Complete |
+| PROJ-04 | Phase 2 | Complete |
+| PAGE-01 | Phase 2 | Complete |
+| PAGE-02 | Phase 2 | Complete |
+| PAGE-03 | Phase 2 | Complete |
+| PAGE-04 | Phase 2 | Complete |
+| IMG-01 | Phase 2 | Complete |
+| IMG-02 | Phase 2 | Complete |
+| IMG-03 | Phase 2 | Complete |
+| IMG-04 | Phase 2 | Complete |
+| IMG-05 | Phase 2 | Complete |
+| IMG-06 | Phase 2 | Complete |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
+| CONT-04 | Phase 2 | Complete |
+| CONT-05 | Phase 2 | Complete |
 | SRCH-01 | Phase 4 | Pending |
 | SRCH-02 | Phase 4 | Pending |
 | SRCH-03 | Phase 4 | Pending |

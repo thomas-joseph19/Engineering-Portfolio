@@ -21,6 +21,15 @@ Adding a new engineering project to the portfolio should require nothing more th
 - [x] Cool technical visual style (slate, steel blue, white palette — precision engineering feel) (Validated in Phase 1)
 - [x] Responsive layout (desktop, tablet, mobile) (Validated in Phase 1)
 - [x] Fast loading with lazy-loaded images and minimal JavaScript (Validated in Phase 1)
+- [x] Projects listing page with cards (thumbnail, title, category, summary, date, tags) (Validated in Phase 2)
+- [x] Projects auto-sort by newest first (Validated in Phase 2)
+- [x] Category filters (Mechanical Design, Manufacturing, Programming, Research, Course Projects, Personal Projects) (Validated in Phase 2)
+- [x] Dedicated project pages generated from Markdown + YAML frontmatter files (Validated in Phase 2)
+- [x] Project pages support unlimited images with attractive auto-layouts (Validated in Phase 2)
+- [x] Image features: single, 2-col grid, 3-col grid, wide, captions, fullscreen viewing, zoom, responsive (Validated in Phase 2)
+- [x] Project folder structure: `projects/<slug>/project.md`, `thumbnail.jpg`, `gallery/`, `documents/` (Validated in Phase 2)
+- [x] Adding a project = adding a folder (no code editing required) (Validated in Phase 2)
+- [x] Project template included for easy copying (Validated in Phase 2)
 
 ### Active
 
@@ -29,21 +38,11 @@ Adding a new engineering project to the portfolio should require nothing more th
 - [ ] Featured Projects section on homepage (auto-populated from project metadata)
 - [ ] Engineering Skills section on homepage (auto-generated from project tags)
 - [ ] Career Timeline on homepage (auto-generated from project dates)
-- [ ] Projects listing page with cards (thumbnail, title, category, summary, date, tags)
-- [ ] Projects auto-sort by newest first
-- [ ] Category filters (Mechanical Design, Manufacturing, Programming, Research, Course Projects, Personal Projects)
-- [ ] Dedicated project pages generated from Markdown + YAML frontmatter files
-- [ ] Project pages support unlimited images with attractive auto-layouts
-- [ ] Image features: single, 2-col grid, 3-col grid, wide, captions, fullscreen viewing, zoom, responsive
-- [ ] Project sections are optional (Overview, Objectives, Requirements, Concept Development, Engineering Decisions, CAD, Manufacturing, Testing, Lessons Learned, Future Improvements)
-- [ ] Project folder structure: `projects/<slug>/project.md`, `thumbnail.jpg`, `gallery/`, `documents/`
-- [ ] Adding a project = adding a folder (no code editing required)
 - [ ] Client-side search (titles, descriptions, skills, software, tags, categories)
 - [ ] Resume page with embedded PDF, download button, easy PDF replacement, last-updated date
 - [ ] About page with editable biography, education, experience, interests, goals, profile image
 - [ ] Contact page with email, LinkedIn, GitHub links, optional resume button
 - [ ] Well-documented code with comments explaining how to add/edit content
-- [ ] Project template included for easy copying
 
 ### Out of Scope
 
