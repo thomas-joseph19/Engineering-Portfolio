@@ -111,55 +111,55 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SITE-01 | — | Pending |
-| SITE-02 | — | Pending |
-| SITE-03 | — | Pending |
-| SITE-04 | — | Pending |
-| SITE-05 | — | Pending |
-| SITE-06 | — | Pending |
-| SITE-07 | — | Pending |
-| HOME-01 | — | Pending |
-| HOME-02 | — | Pending |
-| HOME-03 | — | Pending |
-| HOME-04 | — | Pending |
-| HOME-05 | — | Pending |
-| PROJ-01 | — | Pending |
-| PROJ-02 | — | Pending |
-| PROJ-03 | — | Pending |
-| PROJ-04 | — | Pending |
-| PAGE-01 | — | Pending |
-| PAGE-02 | — | Pending |
-| PAGE-03 | — | Pending |
-| PAGE-04 | — | Pending |
-| IMG-01 | — | Pending |
-| IMG-02 | — | Pending |
-| IMG-03 | — | Pending |
-| IMG-04 | — | Pending |
-| IMG-05 | — | Pending |
-| IMG-06 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| CONT-05 | — | Pending |
-| SRCH-01 | — | Pending |
-| SRCH-02 | — | Pending |
-| SRCH-03 | — | Pending |
-| RESM-01 | — | Pending |
-| RESM-02 | — | Pending |
-| RESM-03 | — | Pending |
-| RESM-04 | — | Pending |
-| ABUT-01 | — | Pending |
-| ABUT-02 | — | Pending |
-| ABUT-03 | — | Pending |
-| CTCT-01 | — | Pending |
-| CTCT-02 | — | Pending |
-| CTCT-03 | — | Pending |
+| SITE-01 | Phase 1 | Pending |
+| SITE-02 | Phase 1 | Pending |
+| SITE-03 | Phase 1 | Pending |
+| SITE-04 | Phase 1 | Pending |
+| SITE-05 | Phase 1 | Pending |
+| SITE-06 | Phase 1 | Pending |
+| SITE-07 | Phase 4 | Pending |
+| HOME-01 | Phase 1 | Pending |
+| HOME-02 | Phase 1 | Pending |
+| HOME-03 | Phase 4 | Pending |
+| HOME-04 | Phase 4 | Pending |
+| HOME-05 | Phase 4 | Pending |
+| PROJ-01 | Phase 2 | Pending |
+| PROJ-02 | Phase 2 | Pending |
+| PROJ-03 | Phase 2 | Pending |
+| PROJ-04 | Phase 2 | Pending |
+| PAGE-01 | Phase 2 | Pending |
+| PAGE-02 | Phase 2 | Pending |
+| PAGE-03 | Phase 2 | Pending |
+| PAGE-04 | Phase 2 | Pending |
+| IMG-01 | Phase 2 | Pending |
+| IMG-02 | Phase 2 | Pending |
+| IMG-03 | Phase 2 | Pending |
+| IMG-04 | Phase 2 | Pending |
+| IMG-05 | Phase 2 | Pending |
+| IMG-06 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| CONT-05 | Phase 2 | Pending |
+| SRCH-01 | Phase 4 | Pending |
+| SRCH-02 | Phase 4 | Pending |
+| SRCH-03 | Phase 4 | Pending |
+| RESM-01 | Phase 3 | Pending |
+| RESM-02 | Phase 3 | Pending |
+| RESM-03 | Phase 3 | Pending |
+| RESM-04 | Phase 3 | Pending |
+| ABUT-01 | Phase 3 | Pending |
+| ABUT-02 | Phase 3 | Pending |
+| ABUT-03 | Phase 3 | Pending |
+| CTCT-01 | Phase 3 | Pending |
+| CTCT-02 | Phase 3 | Pending |
+| CTCT-03 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 44 total
-- Mapped to phases: 0
-- Unmapped: 44 ⚠️
+- Mapped to phases: 44
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-07-08*
