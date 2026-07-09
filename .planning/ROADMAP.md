@@ -29,4 +29,4 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 5. Planetary Gear Showcase | 0/1 | Planned | - |
+| 5. Planetary Gear Showcase | 0/1 | Planned    |  |
