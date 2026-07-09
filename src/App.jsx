@@ -1,5 +1,7 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Placeholders for Pages (will be fully implemented in Phase 3)
 function AboutPage() {
@@ -61,26 +63,13 @@ function NotFoundPage() {
 }
 
 function AppContent() {
-  const location = useLocation();
   return (
     <div className="min-h-screen bg-brand-bg-dark text-brand-text-secondary flex flex-col font-sans">
-      {/* Persistent Nav (Will be built in Phase 2) */}
-      <header className="border-b border-brand-bg-card bg-brand-bg-dark/80 backdrop-blur-md sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-brand-text-primary font-bold text-lg font-heading">
-            Portfolio
-          </Link>
-          <nav className="flex space-x-6">
-            <Link to="/" className="hover:text-brand-accent-primary transition">About</Link>
-            <Link to="/projects" className="hover:text-brand-accent-primary transition">Projects</Link>
-            <Link to="/resume" className="hover:text-brand-accent-primary transition">Resume</Link>
-            <Link to="/contact" className="hover:text-brand-accent-primary transition">Contact</Link>
-          </nav>
-        </div>
-      </header>
+      {/* Persistent Navigation Header */}
+      <Navbar />
 
       {/* Main Content Area */}
-      <main className="flex-grow max-w-6xl mx-auto px-4 py-12 w-full">
+      <main className="flex-grow max-w-6xl mx-auto px-6 py-12 w-full">
         <Routes>
           <Route path="/" element={<AboutPage />} />
           <Route path="/resume" element={<ResumePage />} />
@@ -90,10 +79,8 @@ function AppContent() {
         </Routes>
       </main>
 
-      {/* Persistent Footer (Will be built in Phase 2) */}
-      <footer className="border-t border-brand-bg-card py-6 text-center text-sm text-brand-text-muted">
-        <div>&copy; {new Date().getFullYear()} [PLACEHOLDER: Your Name]. All rights reserved.</div>
-      </footer>
+      {/* Persistent Footer */}
+      <Footer />
     </div>
   );
 }
