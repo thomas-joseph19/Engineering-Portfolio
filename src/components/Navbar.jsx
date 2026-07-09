@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { profileData } from "../data/profile";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
           onClick={closeMenu}
           className="font-heading text-xl font-bold tracking-tight text-brand-text-primary transition-colors hover:text-brand-accent-primary z-50"
         >
-          [PLACEHOLDER: Your Name]
+          {profileData.name}
         </Link>
 
         {/* Desktop Navigation */}

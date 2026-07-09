@@ -1,4 +1,5 @@
 import React from "react";
+import { profileData } from "../data/profile";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,14 +9,14 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
         {/* Copyright notice - must contain exact placeholders */}
         <div className="text-sm tracking-wide">
-          &copy; {currentYear} <span className="text-brand-text-primary font-medium">[PLACEHOLDER: Your Name]</span>. All rights reserved.
+          &copy; {currentYear} <span className="text-brand-text-primary font-medium">{profileData.name}</span>. All rights reserved.
         </div>
 
         {/* Social Icons Links */}
         <div className="flex items-center space-x-6">
           {/* GitHub Link */}
           <a
-            href="https://github.com/[PLACEHOLDER: GitHub Username]"
+            href={profileData.contact.github}
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub Profile"
@@ -36,7 +37,7 @@ export default function Footer() {
 
           {/* LinkedIn Link */}
           <a
-            href="https://linkedin.com/in/[PLACEHOLDER: LinkedIn Username]"
+            href={profileData.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn Profile"
@@ -57,7 +58,7 @@ export default function Footer() {
 
           {/* Email Link */}
           <a
-            href="mailto:[PLACEHOLDER: Your Email]"
+            href={`mailto:${profileData.contact.email}`}
             title="Send Email"
             className="text-brand-text-muted hover:text-brand-accent-primary transition-colors duration-300"
           >
