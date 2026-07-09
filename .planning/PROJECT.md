@@ -33,13 +33,14 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 
 ### Active
 
-(None - Milestone v1.0 complete)
+- [ ] **Planetary Gear Project**: Card entry on projects page showing CAD final image, brief description, and skills.
+- [ ] **Planetary Gear Detail Page**: Route at `/projects/planetary-gear` with step descriptions, 5 placeholder photos, and 5 CAD part/assembly files.
 
 ### Out of Scope
 
 - Public SEO optimization / search indexing — Private-style portfolio (disallow all crawling).
 - Contact form with backend — Simple mailto/social links preferred to keep stack static and serverless.
-- Project cards or commented-out project lists — Must keep Projects page blank per instructions.
+- Other project cards or commented-out project lists — Only showcase the SolidWorks planetary gear project.
 - Real images or real personal information in git history — All details must be clear placeholders.
 
 ## Context
