@@ -37,7 +37,7 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 
 ### Active
 
-(None - Milestone v1.2 complete)
+- [ ] **Robotic Arm Project**: Add Robotic Arm card, route `/projects/robotic-arm`, vertical scrolling layout with Final product first, followed by alternating parts, and 16 placeholder asset files.
 
 ### Out of Scope
 
