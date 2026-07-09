@@ -35,7 +35,7 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 
 ### Active
 
-(None - Milestone v1.1 complete)
+- [ ] **Planetary Gear Page Refinement**: Redesign detailed subpage to show Final Assembly first, followed by sequential, alternating side-by-side showcases of individual parts as the user scrolls.
 
 ### Out of Scope
 
