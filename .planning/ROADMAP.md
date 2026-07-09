@@ -30,4 +30,4 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 7. Robotic Arm Showcase | 0/1 | Planned | - |
+| 7. Robotic Arm Showcase | 0/1 | Planned    |  |
