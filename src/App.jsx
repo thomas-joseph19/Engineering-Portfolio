@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ResumePage from "./pages/ResumePage";
 import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import PlanetaryGearPage from "./pages/PlanetaryGearPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function AppContent() {
@@ -21,6 +22,7 @@ function AppContent() {
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/planetary-gear" element={<PlanetaryGearPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

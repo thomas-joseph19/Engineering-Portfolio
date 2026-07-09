@@ -6,7 +6,7 @@
 
 ### Phases
 
-- [ ] **Phase 5: Planetary Gear Showcase** - Build Projects card entry, planetary-gear subpage, placeholder assets, and descriptions.
+- [x] **Phase 5: Planetary Gear Showcase** - Build Projects card entry, planetary-gear subpage, placeholder assets, and descriptions. (completed 2026-07-09)
 
 ## Phase Details
 
@@ -23,10 +23,10 @@
 **Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: Implement projects card, planetary gear subpage component, add assets placeholders, and connect routing.
+- [x] 05-01: Implement projects card, planetary gear subpage component, add assets placeholders, and connect routing.
 
 ## Progress
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 5. Planetary Gear Showcase | 0/1 | Planned    |  |
+| 5. Planetary Gear Showcase | 1/1 | Complete   | 2026-07-09 |
