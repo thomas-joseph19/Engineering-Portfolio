@@ -48,9 +48,21 @@ To activate automated deployment:
 To personalize the portfolio, replace the following placeholder assets and text files:
 
 ### 1. Static Asset Files
-- [ ] **Favicon**: Replace `/public/favicon-PLACEHOLDER.ico` with your custom browser icon (e.g. `favicon.ico`). Update the link reference in `public/index.html`.
+- [ ] **Favicon**: Replace `/public/favicon-PLACEHOLDER.ico` with your custom browser icon.
 - [ ] **Profile Photo**: Replace `/public/assets/images/profile-photo-PLACEHOLDER.jpg` with your profile picture.
 - [ ] **Resume PDF**: Replace `/public/assets/documents/resume-PLACEHOLDER.pdf` with your actual CV/Resume PDF file.
+- [ ] **Planetary Gear Images**: Replace the 5 images under `/public/assets/images/projects/`:
+  - `planet-gear-PLACEHOLDER.jpg`
+  - `ring-gear-PLACEHOLDER.jpg`
+  - `rotary-gear-PLACEHOLDER.jpg`
+  - `sun-gear-PLACEHOLDER.jpg`
+  - `final-product-PLACEHOLDER.jpg`
+- [ ] **Planetary Gear CAD Files**: Replace the 5 CAD files under `/public/assets/documents/projects/`:
+  - `planet-gear-PLACEHOLDER.sldprt`
+  - `ring-gear-PLACEHOLDER.sldprt`
+  - `rotary-gear-PLACEHOLDER.sldprt`
+  - `sun-gear-PLACEHOLDER.sldprt`
+  - `final-assembly-PLACEHOLDER.sldasm`
 
 ### 2. Branding & Content Text
 Open `/src/data/profile.js` and customize the data keys:

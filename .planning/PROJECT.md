@@ -6,15 +6,16 @@ A personal engineering portfolio website built as a private-style deliverable. I
 
 ## Core Value
 
-Create a sleek, modern, professional developer portfolio with 4 core pages (About Me, Resume, Contact, Projects) and a custom 404 page, ensuring all placeholder assets are clearly labeled and easily replaceable, with a Projects page that remains completely blank except for a "Projects coming soon!" message.
+Create a sleek, modern, professional developer portfolio with 4 core pages (About Me, Resume, Contact, Projects) and a custom 404 page, ensuring all placeholder assets are clearly labeled and easily replaceable, with a Projects page that displays the SolidWorks planetary gear project and redirects to detailed steps.
 
 ## Current State
 
 - **Milestone v1.0 (Shipped: 2026-07-09)**: Sleek, responsive static template with About, Resume, Contact, and custom 404 page. Includes automated GitHub Actions workflow and crawler exclusions.
+- **Milestone v1.1 (Shipped: 2026-07-09)**: Added Planetary Gear project card on main projects page and details sub-route `/projects/planetary-gear` with step-by-step descriptions and CAD download links.
 
 ## Next Milestone Goals
 
-- Populate projects page with detailed CAD models, FEA simulations, and university research case studies.
+- Populate projects page with additional CAD models, FEA simulations, and university research case studies.
 - Implement contact mail form integration.
 
 ## Requirements
@@ -27,14 +28,14 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 - **[v1.0]** **About Me page**: Biography, interests chips, education info, experience timeline, and profile photo.
 - **[v1.0]** **Resume page**: On-page resume sections and PDF download trigger linking to physical placeholder file.
 - **[v1.0]** **Contact page**: Email, LinkedIn, GitHub icons and static address details.
-- **[v1.0]** **Projects page**: blank coming soon notice.
 - **[v1.0]** **404 page**: radial glow layout and home redirect button.
 - **[v1.0]** **Branding & Privacy**: robots.txt block, favicon, assets placeholder system, and deployment workflows.
+- **[v1.1]** **Planetary Gear Project**: Card entry on projects page showing CAD final image, brief description, and skills. No dates.
+- **[v1.1]** **Planetary Gear Detail Page**: Route at `/projects/planetary-gear` with step descriptions, 5 placeholder photos, and 5 CAD part/assembly files.
 
 ### Active
 
-- [ ] **Planetary Gear Project**: Card entry on projects page showing CAD final image, brief description, and skills.
-- [ ] **Planetary Gear Detail Page**: Route at `/projects/planetary-gear` with step descriptions, 5 placeholder photos, and 5 CAD part/assembly files.
+(None - Milestone v1.1 complete)
 
 ### Out of Scope
 
@@ -63,6 +64,7 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 | React Router | Standard router for client-side single-page applications. | Shipped in v1.0 |
 | Flat blank projects page | Specifically requested by the user, avoids clutter until they are ready. | Shipped in v1.0 |
 | Crawl blocking via robots.txt | Restricts crawler bots to keep the portfolio private as desired. | Shipped in v1.0 |
+| Sub-route project page | Showcases steps and CAD part downloads for specific assemblies. | Shipped in v1.1 |
 
 ---
-*Last updated: 2026-07-09 after v1.0 release*
+*Last updated: 2026-07-09 after v1.1 release*
