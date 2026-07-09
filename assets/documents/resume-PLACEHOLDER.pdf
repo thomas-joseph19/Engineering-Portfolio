@@ -1,0 +1,17 @@
+==================================================
+RESUME PLACEHOLDER - THOMAS JOSEPH
+==================================================
+
+University of Central Florida
+Mechanical Engineering Student
+Expected Graduation: May 2027
+
+This PDF is a placeholder file. Replace this file at the path:
+/public/assets/documents/resume-PLACEHOLDER.pdf
+with your actual physical resume PDF.
+
+Ensure the file name remains "resume-PLACEHOLDER.pdf" or update the reference in:
+- src/data/profile.js
+- src/pages/ResumePage.jsx
+
+==================================================
