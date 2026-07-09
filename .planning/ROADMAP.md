@@ -73,6 +73,6 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Setup | 1/1 | Complete   | 2026-07-09 |
-| 2. Navigation & Layout | 0/1 | Not started | - |
+| 2. Navigation & Layout | 0/1 | Planned    |  |
 | 3. Core Pages | 0/1 | Not started | - |
 | 4. Error, Placeholders & Docs | 0/1 | Not started | - |
