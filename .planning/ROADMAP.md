@@ -29,4 +29,4 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 6. Planetary Gear Page Refinement | 0/1 | Planned | - |
+| 6. Planetary Gear Page Refinement | 0/1 | Planned    |  |
