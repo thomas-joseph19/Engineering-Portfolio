@@ -8,38 +8,44 @@ A personal engineering portfolio website built as a private-style deliverable. I
 
 Create a sleek, modern, professional developer portfolio with 4 core pages (About Me, Resume, Contact, Projects) and a custom 404 page, ensuring all placeholder assets are clearly labeled and easily replaceable, with a Projects page that remains completely blank except for a "Projects coming soon!" message.
 
+## Current State
+
+- **Milestone v1.0 (Shipped: 2026-07-09)**: Sleek, responsive static template with About, Resume, Contact, and custom 404 page. Includes automated GitHub Actions workflow and crawler exclusions.
+
+## Next Milestone Goals
+
+- Populate projects page with detailed CAD models, FEA simulations, and university research case studies.
+- Implement contact mail form integration.
+
 ## Requirements
 
 ### Validated
 
-(None yet — ship to validate)
+- **[v1.0]** React (via Vite) + Tailwind CSS + React Router client-side routing.
+- **[v1.0]** Sticky transparent header with active link highlights and responsive mobile hamburger overlay.
+- **[v1.0]** Slim footer with copyright year, social SVGs, and email links.
+- **[v1.0]** **About Me page**: Biography, interests chips, education info, experience timeline, and profile photo.
+- **[v1.0]** **Resume page**: On-page resume sections and PDF download trigger linking to physical placeholder file.
+- **[v1.0]** **Contact page**: Email, LinkedIn, GitHub icons and static address details.
+- **[v1.0]** **Projects page**: blank coming soon notice.
+- **[v1.0]** **404 page**: radial glow layout and home redirect button.
+- **[v1.0]** **Branding & Privacy**: robots.txt block, favicon, assets placeholder system, and deployment workflows.
 
 ### Active
 
-- [ ] React (via Vite) + Tailwind CSS + React Router client-side routing
-- [ ] Top navigation bar present on all pages with active page highlighting and a mobile hamburger menu
-- [ ] Slim persistent footer on all pages with copyright, social icons, and mailto links
-- [ ] **About Me Page**: Biography placeholders, profile photo placeholder, skills snapshot strip (icon+label chips)
-- [ ] **Resume Page**: Render resume sections on-page, prominent "Download Resume (PDF)" button linking to `/assets/documents/resume-PLACEHOLDER.pdf`
-- [ ] **Contact Page**: Social links, email, placeholder text, icons for each contact method (mailto link only, no functional backend form)
-- [ ] **Projects Page**: Completely blank page except for a single centered message: "Projects coming soon!"
-- [ ] **404 Page**: Custom Catch-all Not Found page with friendly message and button/link back to About Me
-- [ ] **Aesthetic**: Dark mode theme (deep navy background `#0F172A`/`#0B0F19`, primary electric blue/cyan accent `#38BDF8`/`#22D3EE`, secondary violet/indigo accent `#818CF8`, off-white body text, full white headings)
-- [ ] **Animations**: Tasteful, fast fade-in/slide page transitions and initial load animations
-- [ ] **Placeholder System**: Folder structure (`/public/favicon-PLACEHOLDER.ico`, `/public/assets/images/profile-photo-PLACEHOLDER.jpg`, `/public/assets/documents/resume-PLACEHOLDER.pdf`) with obvious placeholders (graphic for image, text for PDF) and in-code comments
-- [ ] **Readme**: Setup, run, deployment instructions, and a full checklist of placeholders to replace
+(None - Milestone v1.0 complete)
 
 ### Out of Scope
 
-- [ ] Public SEO optimization / search indexing — Private-style portfolio (disallow all crawling)
-- [ ] Contact form with backend — Simple mailto/social links preferred to keep stack static and serverless
-- [ ] Project cards or commented-out project lists — Must keep Projects page blank per instructions
-- [ ] Real images or real personal information in git history — All details must be clear placeholders
+- Public SEO optimization / search indexing — Private-style portfolio (disallow all crawling).
+- Contact form with backend — Simple mailto/social links preferred to keep stack static and serverless.
+- Project cards or commented-out project lists — Must keep Projects page blank per instructions.
+- Real images or real personal information in git history — All details must be clear placeholders.
 
 ## Context
 
 - The site is a static site hosted on GitHub Pages or run locally.
-- The owner is an engineering student who wants a high-quality portfolio that is clean and minimal, without heavy animations.
+- The owner is an engineering student who wants a high-quality portfolio that is clean and minimal.
 - The owner wants to easily replace placeholder items by matching the checklist in the README.
 
 ## Constraints
@@ -52,26 +58,10 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| React (Vite) + Tailwind | Requested stack for lightweight, fast build and modern layout. | — Pending |
-| React Router | Standard router for client-side single-page applications. | — Pending |
-| Flat blank projects page | Specifically requested by the user, avoids clutter until they are ready. | — Pending |
-
-## Evolution
-
-This document evolves at phase transitions and milestone boundaries.
-
-**After each phase transition** (via `/gsd-transition`):
-1. Requirements invalidated? → Move to Out of Scope with reason
-2. Requirements validated? → Move to Validated with phase reference
-3. New requirements emerged? → Add to Active
-4. Decisions to log? → Add to Key Decisions
-5. "What This Is" still accurate? → Update if drifted
-
-**After each milestone** (via `/gsd-complete-milestone`):
-1. Full review of all sections
-2. Core Value check — still the right priority?
-3. Audit Out of Scope — reasons still valid?
-4. Update Context with current state
+| React (Vite) + Tailwind | Requested stack for lightweight, fast build and modern layout. | Shipped in v1.0 |
+| React Router | Standard router for client-side single-page applications. | Shipped in v1.0 |
+| Flat blank projects page | Specifically requested by the user, avoids clutter until they are ready. | Shipped in v1.0 |
+| Crawl blocking via robots.txt | Restricts crawler bots to keep the portfolio private as desired. | Shipped in v1.0 |
 
 ---
-*Last updated: 2026-07-09 after initialization*
+*Last updated: 2026-07-09 after v1.0 release*
