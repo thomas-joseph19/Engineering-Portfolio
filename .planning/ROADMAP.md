@@ -74,5 +74,5 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation & Setup | 1/1 | Complete   | 2026-07-09 |
 | 2. Navigation & Layout | 1/1 | Complete   | 2026-07-09 |
-| 3. Core Pages | 0/1 | Not started | - |
+| 3. Core Pages | 0/1 | Planned    |  |
 | 4. Error, Placeholders & Docs | 0/1 | Not started | - |
