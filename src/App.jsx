@@ -1,26 +1,12 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ResumePage from "./pages/ResumePage";
 import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
-
-function NotFoundPage() {
-  return (
-    <div className="animate-page-enter flex flex-col items-center justify-center min-h-[400px] text-center">
-      <h1 className="text-6xl font-bold font-heading text-brand-accent-primary mb-4">404</h1>
-      <p className="text-xl text-brand-text-primary mb-8">Page Not Found</p>
-      <Link
-        to="/"
-        className="px-6 py-3 bg-brand-accent-secondary text-brand-text-primary rounded-lg font-medium hover:bg-brand-accent-primary transition duration-300"
-      >
-        Back to About Me
-      </Link>
-    </div>
-  );
-}
+import NotFoundPage from "./pages/NotFoundPage";
 
 function AppContent() {
   return (
