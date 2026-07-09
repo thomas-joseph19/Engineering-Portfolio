@@ -12,6 +12,7 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 
 - **Milestone v1.0 (Shipped: 2026-07-09)**: Sleek, responsive static template with About, Resume, Contact, and custom 404 page. Includes automated GitHub Actions workflow and crawler exclusions.
 - **Milestone v1.1 (Shipped: 2026-07-09)**: Added Planetary Gear project card on main projects page and details sub-route `/projects/planetary-gear` with step-by-step descriptions and CAD download links.
+- **Milestone v1.2 (Shipped: 2026-07-09)**: Restructured detailed project page into alternating scrollable side-by-side article.
 
 ## Next Milestone Goals
 
@@ -32,10 +33,11 @@ Create a sleek, modern, professional developer portfolio with 4 core pages (Abou
 - **[v1.0]** **Branding & Privacy**: robots.txt block, favicon, assets placeholder system, and deployment workflows.
 - **[v1.1]** **Planetary Gear Project**: Card entry on projects page showing CAD final image, brief description, and skills. No dates.
 - **[v1.1]** **Planetary Gear Detail Page**: Route at `/projects/planetary-gear` with step descriptions, 5 placeholder photos, and 5 CAD part/assembly files.
+- **[v1.2]** **Planetary Gear Page Refinement**: Redesign detailed subpage to show Final Assembly first, followed by sequential, alternating side-by-side showcases of individual parts as the user scrolls.
 
 ### Active
 
-- [ ] **Planetary Gear Page Refinement**: Redesign detailed subpage to show Final Assembly first, followed by sequential, alternating side-by-side showcases of individual parts as the user scrolls.
+(None - Milestone v1.2 complete)
 
 ### Out of Scope
 
