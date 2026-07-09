@@ -7,7 +7,7 @@ Build a static React-based engineering portfolio from scratch using Vite, Tailwi
 ## Phases
 
 - [x] **Phase 1: Foundation & Setup** - Initialize React app with Vite, Tailwind CSS, and Routing setup (completed 2026-07-09)
-- [ ] **Phase 2: Navigation & Layout** - Build persistent Header, Hamburger menu, and Footer components
+- [x] **Phase 2: Navigation & Layout** - Build persistent Header, Hamburger menu, and Footer components (completed 2026-07-09)
 - [ ] **Phase 3: Core Pages** - Create About Me, Resume, Contact, and Projects pages
 - [ ] **Phase 4: Error, Placeholders & Docs** - Add 404 page, actual placeholder files, and README checklist
 
@@ -38,7 +38,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 02-01: Create persistent Header and Footer components, configure active page styles and responsive mobile hamburger menu.
+- [x] 02-01: Create persistent Header and Footer components, configure active page styles and responsive mobile hamburger menu.
 
 ### Phase 3: Core Pages
 **Goal**: Implement the 4 main pages with placeholder contents, links, and styling.
@@ -73,6 +73,6 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Setup | 1/1 | Complete   | 2026-07-09 |
-| 2. Navigation & Layout | 0/1 | Planned    |  |
+| 2. Navigation & Layout | 1/1 | Complete   | 2026-07-09 |
 | 3. Core Pages | 0/1 | Not started | - |
 | 4. Error, Placeholders & Docs | 0/1 | Not started | - |
