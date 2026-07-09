@@ -72,7 +72,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Setup | 0/1 | Not started | - |
+| 1. Foundation & Setup | 0/1 | Planned    |  |
 | 2. Navigation & Layout | 0/1 | Not started | - |
 | 3. Core Pages | 0/1 | Not started | - |
 | 4. Error, Placeholders & Docs | 0/1 | Not started | - |
