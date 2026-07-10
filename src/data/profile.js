@@ -2,8 +2,8 @@ export const profileData = {
   name: "Thomas Joseph",
   tagline: "Mechanical Engineering & Applied Mathematics Student",
   university: "University of Central Florida",
-  bio: "I am a Mechanical Engineering and Applied Mathematics student at the University of Central Florida with a GPA of 3.9. I have a passion for machine design, aerospace propulsion, and scientific computing. My experience spans hands-on leadership as the Founder of Tampa Bay Model United Nations, research in gamma spectroscopy at Michigan State University, and collaborative rocketry project design with AIAA@UCF. I enjoy translating conceptual mathematics and physics into high-performance engineering hardware.",
-  profileImagePlaceholder: "/assets/images/profile-photo-PLACEHOLDER.jpg",
+  bio: "Mechanical Engineering and Applied Mathematics student at the University of Central Florida. GPA: 3.9",
+  profileImagePlaceholder: "assets/images/profile-photo-PLACEHOLDER.jpg",
   education: [
     {
       degree: "BS in Mechanical Engineering & BS in Applied Mathematics",
@@ -11,13 +11,6 @@ export const profileData = {
       gpa: "3.9 / 4.0",
       date: "Expected Graduation: May 2029",
       details: "Pursuing dual degrees with an emphasis on computer-aided design, high-powered rocketry, and mathematical modeling."
-    },
-    {
-      degree: "International Baccalaureate Degree",
-      school: "Hillsborough High School International Baccalaureate",
-      gpa: "6.8 (IB scale)",
-      date: "Graduated: May 2025",
-      details: "Completed advanced coursework in international baccalaureate stem modules, fostering analytical research and leadership skills."
     }
   ],
   experience: [
@@ -80,11 +73,7 @@ export const profileData = {
     "Java, C, Python",
     "Model United Nations Leadership"
   ],
-  goals: [
-    "Design and simulate high-altitude rocket propulsion assemblies.",
-    "Solve complex fluid dynamics and structural problems using applied mathematics.",
-    "Optimize robotic structures and automation workflows in hardware systems."
-  ],
+  goals: [],
   skills: {
     programming: ["Java", "C", "Python"],
     engineering: ["CAD Modeling", "Buoyancy & Stability Design", "Gamma Spectroscopy", "Nuclear Data Analysis"],
@@ -100,11 +89,11 @@ export const profileData = {
     { name: "Data Science 101 – IBM", date: "Granted April 2026" }
   ],
   resume: {
-    pathPlaceholder: "/assets/documents/resume-PLACEHOLDER.pdf",
+    pathPlaceholder: "assets/documents/resume-PLACEHOLDER.pdf",
     lastUpdated: "July 2026"
   },
   contact: {
-    email: "thomas.joseph@knights.ucf.edu",
+    email: "thomas.joseph19@outlook.com",
     linkedin: "https://linkedin.com/in/thomas-joseph-ucf",
     github: "https://github.com/thomas-joseph19"
   }

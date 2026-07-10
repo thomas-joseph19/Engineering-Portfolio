@@ -9,8 +9,8 @@ export default function RoboticArmPage() {
     desc: "The complete robotic arm assembly integrates all structural link profiles, joints, and actuation linkages. Set up using strict concentric, coincident, and limit distance mates in SolidWorks. Limit mates constrain the rotational ranges of motion for each joint to simulate real-world servo travel bounds.",
     note: "Static FEA simulation tests and dynamic collision check features in SolidWorks were used to analyze stress distribution across joints under maximum end-effector load conditions.",
     // PLACEHOLDER: robotic-arm-final-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-    img: "/assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg",
-    cadPath: "/assets/documents/projects/robotic-arm-final-PLACEHOLDER.sldasm",
+    img: "assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg",
+    cadPath: "assets/documents/projects/robotic-arm-final-PLACEHOLDER.sldasm",
     cadLabel: "Download Assembly File (.sldasm)"
   };
 
@@ -22,8 +22,8 @@ export default function RoboticArmPage() {
       desc: "Designed as the heavy foundation mount containing structural ribs for stability and a large central recess. Housing for the main rotation servo and slip-ring cabling system.",
       note: "Draft angles were added along vertical faces to ensure tool clearance for potential sand-casting manufacturing workflows.",
       // PLACEHOLDER: robotic-arm-base-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-base-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-base-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-base-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-base-PLACEHOLDER.sldprt",
       cadLabel: "Download Base Part (.sldprt)"
     },
     {
@@ -32,8 +32,8 @@ export default function RoboticArmPage() {
       desc: "An extruded C-channel design optimizing structural stiffness-to-weight ratio. Mounts to the base rotary plate and supports the elbow pivot actuator.",
       note: "Fillets were configured on internal corners to reduce high stress concentrations under heavy vertical torque loading.",
       // PLACEHOLDER: robotic-arm-link1-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-link1-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-link1-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-link1-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-link1-PLACEHOLDER.sldprt",
       cadLabel: "Download Link 1 Part (.sldprt)"
     },
     {
@@ -42,8 +42,8 @@ export default function RoboticArmPage() {
       desc: "Modeled with integrated servo brackets and dual support rib flanges. Bridges the elbow joint to the wrist yaw axis to provide forward outreach capabilities.",
       note: "Lightweighting pockets were cleared out from the central web structure to minimize rotational inertia without sacrificing bending resistance.",
       // PLACEHOLDER: robotic-arm-link2-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-link2-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-link2-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-link2-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-link2-PLACEHOLDER.sldprt",
       cadLabel: "Download Link 2 Part (.sldprt)"
     },
     {
@@ -52,8 +52,8 @@ export default function RoboticArmPage() {
       desc: "A compact coupler component housing wrist pitching gears and routing feedback potentiometer wiring. Interfaces directly with the end-effector base.",
       note: "High-precision bore tolerances (+0.015mm / -0.000mm) were assigned to the pin holes to avoid alignment backlash.",
       // PLACEHOLDER: robotic-arm-link3-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-link3-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-link3-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-link3-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-link3-PLACEHOLDER.sldprt",
       cadLabel: "Download Link 3 Part (.sldprt)"
     },
     {
@@ -62,8 +62,8 @@ export default function RoboticArmPage() {
       desc: "Interfaces the wrist pitch mechanism to the claw structure. Features mounting slots for direct micro-servo attachment and sensor bracket integration.",
       note: "Includes structural guide tracks to restrict linear slider motion to a single degree of freedom.",
       // PLACEHOLDER: robotic-arm-gripper-link-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-gripper-link-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-gripper-link-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-gripper-link-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-gripper-link-PLACEHOLDER.sldprt",
       cadLabel: "Download Gripper Link Part (.sldprt)"
     },
     {
@@ -72,8 +72,8 @@ export default function RoboticArmPage() {
       desc: "Dual-sided mounting frame providing rigid anchor points for both gripper fingers. Supports lateral load transfer during material grasping.",
       note: "Optimized utilizing SolidWorks Simulation topology constraints to maximize rigidity while decreasing raw material volume.",
       // PLACEHOLDER: robotic-arm-gripper-support-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-gripper-support-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-gripper-support-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-gripper-support-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-gripper-support-PLACEHOLDER.sldprt",
       cadLabel: "Download Gripper Support Part (.sldprt)"
     },
     {
@@ -82,8 +82,8 @@ export default function RoboticArmPage() {
       desc: "Designed with specialized high-friction tread geometry along clamping faces. Actuated via a gear pinion or linkage bar setup to grip irregular object geometries.",
       note: "Structural FEA tests were run to check for maximum bending deformation along the finger tip under peak clamping torque.",
       // PLACEHOLDER: robotic-arm-gripper-arm-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/robotic-arm-gripper-arm-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/robotic-arm-gripper-arm-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm-gripper-arm-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm-gripper-arm-PLACEHOLDER.sldprt",
       cadLabel: "Download Gripper Arm Part (.sldprt)"
     }
   ];

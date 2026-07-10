@@ -105,26 +105,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Career Goals */}
-        <section className="bg-brand-bg-card border border-brand-bg-card/50 rounded-2xl p-8 shadow-lg">
-          <h2 className="text-2xl font-bold font-heading text-brand-text-primary mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-brand-accent-primary rounded-full inline-block" />
-            Career Goals
-          </h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {profileData.goals.map((goal, idx) => (
-              <li 
-                key={idx} 
-                className="bg-brand-bg-dark/50 border border-brand-bg-card/30 rounded-xl p-4 text-sm text-brand-text-secondary hover:border-brand-accent-secondary/30 transition-colors"
-              >
-                <div className="flex gap-3">
-                  <span className="text-brand-accent-primary font-bold">{idx + 1}.</span>
-                  <p className="leading-relaxed">{goal}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
+
       </main>
     </div>
   );

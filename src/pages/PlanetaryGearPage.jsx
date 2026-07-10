@@ -9,8 +9,8 @@ export default function PlanetaryGearPage() {
     desc: "The final planetary gear system assembly is created by aligning part components using strict mechanical constraints. Concentric mates position the sun gear, planet gears, and rotary carrier, while coincident mates align the planar faces. Finally, physical gear mates are configured between the sun-planet and planet-ring meshes to model true kinematic motion.",
     note: "SolidWorks Motion Study is used to analyze torque transfer rates and verify that the calculated gear ratio of 4:1 operates without interference or teeth collision under loading.",
     // PLACEHOLDER: final-product-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-    img: "/assets/images/projects/final-product-PLACEHOLDER.jpg",
-    cadPath: "/assets/documents/projects/final-assembly-PLACEHOLDER.sldasm",
+    img: "assets/images/projects/final-product-PLACEHOLDER.jpg",
+    cadPath: "assets/documents/projects/final-assembly-PLACEHOLDER.sldasm",
     cadLabel: "Download Assembly File (.sldasm)"
   };
 
@@ -22,8 +22,8 @@ export default function PlanetaryGearPage() {
       desc: "Designed using parametric equations to link the diametral pitch and number of teeth directly to design variables. Extruded with a central bore and keyway cut to accommodate a high-torque electric motor shaft interface.",
       note: "Standard 20° pressure angle was used to minimize sliding friction and maximize load-carrying capacity across the teeth profiles.",
       // PLACEHOLDER: sun-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/sun-gear-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/sun-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/sun-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/sun-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Sun Gear Part (.sldprt)"
     },
     {
@@ -32,8 +32,8 @@ export default function PlanetaryGearPage() {
       desc: "Three planetary gears are distributed at equal 120° intervals around the central axis. These gears rotate on carrier pins while meshing simultaneously with the stationary outer ring gear and the rotating central sun gear.",
       note: "Central clearance tolerances were configured on the mounting pins to allow smooth rotational slip while preventing axial wobble.",
       // PLACEHOLDER: planet-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/planet-gear-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/planet-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/planet-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/planet-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Planet Gear Part (.sldprt)"
     },
     {
@@ -42,8 +42,8 @@ export default function PlanetaryGearPage() {
       desc: "Features internal teeth profile cutting. Configured as the rigid external boundary of the gearbox. Added external indexing mounting holes to secure the assembly housing onto the testing chassis.",
       note: "Draft angles and fillet radii were integrated to optimize the part model for cast machining and injection molding feasibility studies.",
       // PLACEHOLDER: ring-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/ring-gear-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/ring-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/ring-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/ring-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Ring Gear Part (.sldprt)"
     },
     {
@@ -52,8 +52,8 @@ export default function PlanetaryGearPage() {
       desc: "Constructed as a rigid plate holding three offset planet pins. Serves to collect the orbital translation of the planet gears and transmit it as a unified, speed-reduced rotational output on the main drive axle.",
       note: "Structural FEA (Finite Element Analysis) simulation was run on the carrier plate to identify stress concentrations around the pin joints.",
       // PLACEHOLDER: rotary-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
-      img: "/assets/images/projects/rotary-gear-PLACEHOLDER.jpg",
-      cadPath: "/assets/documents/projects/rotary-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/rotary-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/rotary-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Carrier Part (.sldprt)"
     }
   ];

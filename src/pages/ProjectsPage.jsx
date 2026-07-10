@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           <div className="md:col-span-1 h-56 md:h-auto bg-brand-bg-dark border-r border-brand-bg-dark relative flex items-center justify-center overflow-hidden">
             {/* PLACEHOLDER: final-product-PLACEHOLDER.jpg must exist in public/assets/images/projects/ */}
             <img
-              src="/assets/images/projects/final-product-PLACEHOLDER.jpg"
+              src="assets/images/projects/final-product-PLACEHOLDER.jpg"
               alt="Planetary Gear Assembly"
               className="w-full h-full object-cover opacity-85 hover:opacity-100 transition-opacity duration-300"
             />
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
           <div className="md:col-span-1 h-56 md:h-auto bg-brand-bg-dark border-r border-brand-bg-dark relative flex items-center justify-center overflow-hidden">
             {/* PLACEHOLDER: robotic-arm-final-PLACEHOLDER.jpg must exist in public/assets/images/projects/ */}
             <img
-              src="/assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg"
+              src="assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg"
               alt="5-Axis Robotic Arm Assembly"
               className="w-full h-full object-cover opacity-85 hover:opacity-100 transition-opacity duration-300"
             />
