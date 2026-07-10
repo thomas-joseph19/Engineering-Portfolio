@@ -9,6 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import PlanetaryGearPage from "./pages/PlanetaryGearPage";
 import RoboticArmPage from "./pages/RoboticArmPage";
 import L1RocketPage from "./pages/L1RocketPage";
+import HullDesignPage from "./pages/HullDesignPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function AppContent() {
@@ -27,6 +28,7 @@ function AppContent() {
           <Route path="/projects/planetary-gear" element={<PlanetaryGearPage />} />
           <Route path="/projects/robotic-arm" element={<RoboticArmPage />} />
           <Route path="/projects/l1-rocket" element={<L1RocketPage />} />
+          <Route path="/projects/hull-design" element={<HullDesignPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
