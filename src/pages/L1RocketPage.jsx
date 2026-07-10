@@ -5,108 +5,108 @@ export default function L1RocketPage() {
   const steps = [
     {
       num: "01",
-      title: "Fixing your Nosecone in Place",
-      desc: "Place the side of the shoulder without the crossbar approximately one inch into your nosecone. With your shoulder and nosecone together, mark 3 evenly spaced spots to drill holes into your nosecone and shoulder. Find a drill bit that is the correct size for the bolts we are using and drill your holes. After your holes are drilled, screw the 3 bolts into them to hold your nosecone in place."
+      title: "Fixing the Nosecone in Place",
+      desc: "I placed the shoulder (without the crossbar) approximately one inch into the nosecone. With both pieces together, I marked three evenly spaced spots, drilled the holes matching our bolt sizes, and secured the nosecone in place using three bolts to prevent any in-flight shift."
     },
     {
       num: "02",
       title: "Placing the Centering Rings and Fins",
-      desc: "Place the aft centering ring (bottom) at the bottom of the motor tube with its ends flushed. Use the length of the fin tabs to measure the distance between the aft centering ring and forward centering ring (top). Mark these locations and routinely check their placement when gluing.\n\n*Note: You should be using TWO forward centering rings instead of the ONE in typical diagrams."
+      desc: "I positioned the aft centering ring flush at the bottom of the motor tube. Using the length of the fin tabs, I measured the exact distance needed between the aft ring and the forward centering rings. I marked these locations and double-checked their placement to prepare for gluing. I opted to use two forward centering rings for enhanced structural redundancy."
     },
     {
       num: "03",
       title: "Gluing Motor Tube and Centering Rings",
-      desc: "Use superglue to set the centering rings in place and then apply liberal amounts of wood glue to fill the cracks and strengthen the joints. Continue onto the next step while the glue dries, repeating for at least two layers of glue. Strength in the motor cage is extremely critical."
+      desc: "I tacked the centering rings in place using superglue and then applied wood glue to fill the seams and reinforce the joints. I allowed each layer to dry and applied multiple layers to ensure maximum strength in the motor cage, which takes the brunt of the motor's thrust."
     },
     {
       num: "04",
       title: "Marking Fin Slots Length",
-      desc: "Use the fin jigs to mark where to cut your fin slots, ensuring you use the appropriate jig for your target number of fins. Apply a metal angle or the door frame alignment technique to draw perfectly straight vertical lines along the tube."
+      desc: "I used the fin jigs to mark the cutting lines for the fin slots on the airframe. I applied a metal angle guide along the length of the tube to draw straight, vertical lines."
     },
     {
       num: "05",
       title: "Marking Fin Slot Height",
-      desc: "Mark the top and bottoms of your fin slots precisely according to your OpenRocket simulation measurements."
+      desc: "I marked the precise top and bottom edges of each fin slot on the body tube based on the dimensions from my OpenRocket simulation."
     },
     {
       num: "06",
       title: "Marking Rail Buttons",
-      desc: "Mark the aft rail button close to the bottom. Since rail buttons guide the rocket off the launch rails, the aft button guides it longer if it is placed lower. Mark the forward rail button about 1 caliber (the diameter of your rocket) above the estimated Center of Gravity (C.G.) from OpenRocket. Apply the metal angle technique to ensure they are perfectly aligned along the airframe."
+      desc: "I marked the aft rail button location near the bottom of the airframe to maximize launch rail guidance length. For the forward rail button, I measured 1 caliber (airframe diameter) above the Center of Gravity (C.G.) estimate from OpenRocket. I used a metal angle to ensure the markings aligned perfectly along the body tube."
     },
     {
       num: "07",
       title: "Cutting the Fin Slots",
-      desc: "Use a sharp X-Acto knife for the fin slots. This requires smooth, patient cutting. Apply thoughtful slicing strategies and do not brute-force this process. We recommend using a saw-like motion directed away from yourself."
+      desc: "I carefully cut the fin slots using a sharp X-Acto knife. I used a patient, controlled saw-like motion cutting away from myself to avoid tearing the body tube cardboard."
     },
     {
       num: "08",
       title: "Cutting Shock Cord",
-      desc: "Cut <= 12 ft of shock cord. Ensure the cut is clean and heat-sealed to prevent fraying."
+      desc: "I measured and cut a 12-foot length of heavy-duty shock cord, ensuring I had enough length to allow safe separation under ejection forces."
     },
     {
       num: "09",
       title: "Installing Eyebolt",
-      desc: "Tie the shock cord around the eyebolt using a bowline knot. Insert the eyebolt into the small hole on the forward centering ring. Use a standard nut on the top and a locknut on the bottom. Use pliers to tighten the nuts while keeping the eyebolt properly aligned, then apply superglue to the threads to prevent loosening."
+      desc: "I tied the shock cord to the eyebolt using a bowline knot. I then inserted the eyebolt into the pre-drilled hole in the forward centering ring, securing it with a standard nut on top, a locknut on the bottom, and superglued the threads to prevent loosening under flight vibrations."
     },
     {
       num: "10",
       title: "Assembling Motor Tube into Airframe",
-      desc: "Cover the top of the motor tube with masking tape to protect the interior from stray glue. You will remove this tape later by poking it from the bottom. Place the motor tube assembly into the body tube and pull the shock cord all the way through the airframe."
+      desc: "I covered the top of the motor tube with masking tape to keep glue out of the motor cavity. I then inserted the motor tube assembly into the airframe and pulled the shock cord through the entire length of the body tube."
     },
     {
       num: "11",
       title: "Gluing Motor Tube into Airframe",
-      desc: "Use the fins to double-check the alignment of the motor tube. Apply a small amount of superglue to lock the motor tube into position. Remove the fins and apply generous amounts of wood glue in all cracks and crevices. Apply wood glue from the top of the airframe as well, building up several thin layers."
+      desc: "I used the fins as alignment guides to hold the motor tube true, tacking it with a small drop of superglue. After removing the fins, I poured wood glue into the seams around the centering rings from both ends of the airframe to build up secure joints."
     },
     {
       num: "12",
       title: "Gluing Fins into Airframe",
-      desc: "Apply a large amount of wood glue onto all contact surfaces on the fin tab and inside the airframe slot. Insert the fins and apply glue on the outer joints between the airframe and fin. Use fin jigs to ensure alignment. Lock them in place with a drop of superglue, then build up strong wood glue fillets on the exterior joints."
+      desc: "I applied wood glue to the contact faces of the fin tabs and the internal slots. I slid the fins into position, secured them with a small drop of superglue, and aligned them using the fin jigs. I built up strong wood glue fillets along the external fin-body tube joints over several applications."
     },
     {
       num: "13",
       title: "Screwing Rail Buttons to Airframe",
-      desc: "Apply superglue into the pre-drilled hole for the rail button, insert the #4 1/2\" screw, add more superglue to the bottom of the button, and screw the assembly into the airframe. If the screw tip pokes through and could snag the parachute, cover it with a few layers of electrical tape."
+      desc: "I applied superglue into the pre-drilled holes, added glue to the base of the rail buttons, and secured them using #4 1/2\" screws. To prevent the internal screw tips from snagging my parachute, I covered them with protective layers of electrical tape."
     },
     {
       num: "14",
       title: "Adding Ballast Weight to Nose Cone",
-      desc: "Weigh out the appropriate amount of clay ballast based on OpenRocket to achieve a target stability of 1.5 - 2.0 calibers. Use a rod or popsicle stick to compact the clay into the tip of the nosecone. Apply masking tape to the nosecone shoulder if necessary to ensure a snug, slide-free friction fit."
+      desc: "I weighed out the exact amount of clay ballast specified by my OpenRocket design to achieve a flight stability of 1.5 - 2.0 calibers. I packed and compacted the clay into the tip of the nosecone. I also added masking tape to the shoulder for a snug friction fit."
     },
     {
       num: "15",
       title: "Selecting Attachment Point for Parachute",
-      desc: "Tie the free end of the shock cord to the nosecone loop. Select the parachute attachment point along the cord so that the nosecone remains above the airframe and cannot collide with it during descent. Tie a simple loop for the quick link."
+      desc: "I tied the free end of the shock cord to the nosecone loop. I set the parachute attachment point along the cord at a distance that prevents the nosecone from colliding with the airframe during descent, tying a secure loop for the quick link."
     },
     {
       num: "16",
       title: "Attaching Screamer to Shock Cord",
-      desc: "Secure the loud screamer locator to the shock cord using heavy electrical tape (do not rely on weak key chains). On the launch pad, you can pull the pin manually or devise a line system to pull it passively when the parachute deploys."
+      desc: "I secured the screamer locator to the upper section of the shock cord using heavy electrical tape for a reliable attachment. I set it up so I could pull the pin on the launch pad, or trigger it passively during deployment."
     },
     {
       num: "17",
       title: "Attaching Motor Retainer",
-      desc: "Drill a pilot hole in the aft centering ring matching the minor diameter of the retainer screw. Align the Z-clip and insert the screw. Keep it slightly loose so you can rotate the retainer out of the way to slide in the motor on launch day."
+      desc: "I drilled a pilot hole in the aft centering ring, aligned the Z-clip retainer, and inserted the mounting screw. I kept the screw slightly loose so I could rotate the retainer clip for easy motor installation on launch day."
     },
     {
       num: "18",
       title: "Congratulations you are done!",
-      desc: "On launch day, attach the parachute and protector assembly to your quick link. Remember that parachute components (quick link, protector, and parachute) are returned to KXR, while the rocket is yours to keep!"
+      desc: "I completed the physical build of the rocket! For the launch, I prepared my parachute and protector assembly to connect to the shock cord quick link."
     },
     {
       num: "19",
       title: "Paint your Rocket",
-      desc: "Paint your rocket in your own custom style. Take pride in this step and make it stand out. Be sure to mask off the rail buttons beforehand so they remain unpainted."
+      desc: "I sanded, primed, and painted the rocket in my own style. I masked off the rail buttons to keep them clean and paint-free for smooth travel along the launch rail."
     },
     {
       num: "20",
       title: "Purchasing membership from NAR or TRA",
-      desc: "You must pay membership dues prior to launch. We recommend doing this a few weeks in advance:\n- TRA ($20): Tripoli Rocketry Association. Cheaper, but certification depends on regional availability.\n- NAR ($40): National Association of Rocketry. Slightly more expensive, but any NAR L1 member can certify you."
+      desc: "I purchased my national rocketry membership dues in advance of launch day, selecting NAR to allow UCF KXR certifiers to evaluate and sign off on my flight."
     },
     {
       num: "21",
       title: "Flight Readiness Review",
-      desc: "Before launching, verify your checklist:\n1. Fill out the SRA Launch Card and NAR Cert Form.\n2. Complete delay drilling on the motor.\n3. Safety briefing (stay behind launch tables, wire ignition last).\n4. Ignition wiring (expose 3/4\" copper, tape igniter, check continuity beep).\n5. Structural check (fins secure, rail buttons tight, nosecone snug, motor fits cleanly)."
+      desc: "I completed the pre-flight checklist: filled out the SRA Launch Card, prepared the motor delay drilling, safely wired the igniter tips checking continuity, and verified all structural parts (fins, rail buttons, nosecone fit, shock cords) were secure."
     }
   ];
 
