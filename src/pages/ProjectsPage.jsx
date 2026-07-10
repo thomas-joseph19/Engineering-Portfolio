@@ -38,7 +38,7 @@ export default function ProjectsPage() {
               </h3>
               
               <p className="text-brand-text-secondary text-sm md:text-base leading-relaxed mb-4">
-                A high-precision planetary gear system designed in SolidWorks. The project demonstrates advanced CAD techniques, complex constraint mappings, and rigid body kinematic simulations to evaluate load transfer properties.
+                High precision planetary gear system designed in SolidWorks.
               </p>
 
               {/* Showcase Design Skills */}
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
                   Design Skills Showcase
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  {["SOLIDWORKS CAD", "Kinematic Analysis", "Mechanical Linkages", "Parametric Equations"].map((skill, idx) => (
+                  {["SOLIDWORKS CAD", "Mechanical Linkages", "Parametric Equations"].map((skill, idx) => (
                     <span
                       key={idx}
                       className="text-xs px-2.5 py-1 bg-brand-bg-dark text-brand-text-secondary border border-brand-bg-card rounded-md font-medium"
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
             {/* PLACEHOLDER: robotic-arm-final-PLACEHOLDER.jpg must exist in public/assets/images/projects/ */}
             <img
               src="assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg"
-              alt="5-Axis Robotic Arm Assembly"
+              alt="Robotic Arm Assembly"
               className="w-full h-full object-cover opacity-85 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
@@ -91,11 +91,11 @@ export default function ProjectsPage() {
           <div className="md:col-span-2 p-6 md:p-8 flex flex-col justify-between gap-6">
             <div>
               <h3 className="text-xl md:text-2xl font-bold text-brand-text-primary mb-3">
-                5-Axis Robotic Arm
+                Robotic Arm
               </h3>
               
               <p className="text-brand-text-secondary text-sm md:text-base leading-relaxed mb-4">
-                A multi-axis articulated robotic arm engineered in SolidWorks. The design showcases high-precision servo bracket linkages, structural stress optimization via FEA simulations, and kinematic constraint boundaries.
+                A multi-axis articulated robotic arm engineered in SolidWorks.
               </p>
 
               {/* Showcase Design Skills */}
@@ -104,7 +104,7 @@ export default function ProjectsPage() {
                   Design Skills Showcase
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  {["Robotics CAD", "FEA Stress Analysis", "Kinematic Mates", "Servo Actuation"].map((skill, idx) => (
+                  {["Robotics CAD", "Kinematic Mates"].map((skill, idx) => (
                     <span
                       key={idx}
                       className="text-xs px-2.5 py-1 bg-brand-bg-dark text-brand-text-secondary border border-brand-bg-card rounded-md font-medium"

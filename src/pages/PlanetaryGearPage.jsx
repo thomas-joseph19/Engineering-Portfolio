@@ -7,8 +7,6 @@ export default function PlanetaryGearPage() {
     title: "Final Assembly",
     subtitle: "SolidWorks Kinetic Simulation & Mate System",
     desc: "The final planetary gear system assembly is created by aligning part components using strict mechanical constraints. Concentric mates position the sun gear, planet gears, and rotary carrier, while coincident mates align the planar faces. Finally, physical gear mates are configured between the sun-planet and planet-ring meshes to model true kinematic motion.",
-    note: "SolidWorks Motion Study is used to analyze torque transfer rates and verify that the calculated gear ratio of 4:1 operates without interference or teeth collision under loading.",
-    // PLACEHOLDER: final-product-PLACEHOLDER.jpg must exist in public/assets/images/projects/
     img: "assets/images/projects/final-product-PLACEHOLDER.jpg",
     cadPath: "assets/documents/projects/final-assembly-PLACEHOLDER.sldasm",
     cadLabel: "Download Assembly File (.sldasm)"
@@ -19,9 +17,7 @@ export default function PlanetaryGearPage() {
     {
       title: "1. Sun Gear",
       subtitle: "The Central Power Input",
-      desc: "Designed using parametric equations to link the diametral pitch and number of teeth directly to design variables. Extruded with a central bore and keyway cut to accommodate a high-torque electric motor shaft interface.",
-      note: "Standard 20° pressure angle was used to minimize sliding friction and maximize load-carrying capacity across the teeth profiles.",
-      // PLACEHOLDER: sun-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
+      desc: "Designed using parametric equations to link the diametral pitch and number of teeth directly to design variables.",
       img: "assets/images/projects/sun-gear-PLACEHOLDER.jpg",
       cadPath: "assets/documents/projects/sun-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Sun Gear Part (.sldprt)"
@@ -30,8 +26,6 @@ export default function PlanetaryGearPage() {
       title: "2. Planet Gears",
       subtitle: "The Translating Torque Nodes",
       desc: "Three planetary gears are distributed at equal 120° intervals around the central axis. These gears rotate on carrier pins while meshing simultaneously with the stationary outer ring gear and the rotating central sun gear.",
-      note: "Central clearance tolerances were configured on the mounting pins to allow smooth rotational slip while preventing axial wobble.",
-      // PLACEHOLDER: planet-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
       img: "assets/images/projects/planet-gear-PLACEHOLDER.jpg",
       cadPath: "assets/documents/projects/planet-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Planet Gear Part (.sldprt)"
@@ -39,9 +33,7 @@ export default function PlanetaryGearPage() {
     {
       title: "3. Ring Gear",
       subtitle: "The Stationary Internal Ring",
-      desc: "Features internal teeth profile cutting. Configured as the rigid external boundary of the gearbox. Added external indexing mounting holes to secure the assembly housing onto the testing chassis.",
-      note: "Draft angles and fillet radii were integrated to optimize the part model for cast machining and injection molding feasibility studies.",
-      // PLACEHOLDER: ring-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
+      desc: "Features internal teeth profile cutting. Configured as the rigid external boundary of the gearbox.",
       img: "assets/images/projects/ring-gear-PLACEHOLDER.jpg",
       cadPath: "assets/documents/projects/ring-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Ring Gear Part (.sldprt)"
@@ -49,9 +41,7 @@ export default function PlanetaryGearPage() {
     {
       title: "4. Rotary Carrier",
       subtitle: "The Combined Torque Output Linkage",
-      desc: "Constructed as a rigid plate holding three offset planet pins. Serves to collect the orbital translation of the planet gears and transmit it as a unified, speed-reduced rotational output on the main drive axle.",
-      note: "Structural FEA (Finite Element Analysis) simulation was run on the carrier plate to identify stress concentrations around the pin joints.",
-      // PLACEHOLDER: rotary-gear-PLACEHOLDER.jpg must exist in public/assets/images/projects/
+      desc: "Constructed as a rigid plate holding three offset planet pins.",
       img: "assets/images/projects/rotary-gear-PLACEHOLDER.jpg",
       cadPath: "assets/documents/projects/rotary-gear-PLACEHOLDER.sldprt",
       cadLabel: "Download Carrier Part (.sldprt)"
@@ -83,8 +73,7 @@ export default function PlanetaryGearPage() {
       <section className="bg-brand-bg-card border border-brand-bg-card/50 rounded-3xl p-6 md:p-8 shadow-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Image */}
-          <div className="lg:col-span-7 aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[400px] bg-brand-bg-dark rounded-2xl border border-brand-bg-card overflow-hidden relative flex items-center justify-center">
-            {/* PLACEHOLDER: final product image path: /public{finalAssembly.img} */}
+          <div className="lg:col-span-7 aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[320px] bg-brand-bg-dark rounded-2xl border border-brand-bg-card overflow-hidden relative flex items-center justify-center">
             <img
               src={finalAssembly.img}
               alt={finalAssembly.title}
@@ -106,19 +95,8 @@ export default function PlanetaryGearPage() {
               </p>
             </div>
 
-            {/* Note to the side */}
-            <div className="bg-brand-bg-dark/40 border-l-4 border-brand-accent-primary p-4 rounded-r-xl">
-              <span className="text-xs font-bold text-brand-text-primary uppercase tracking-wide block mb-1">
-                Kinematic Note
-              </span>
-              <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed">
-                {finalAssembly.note}
-              </p>
-            </div>
-
             {/* Download Link */}
             <div>
-              {/* PLACEHOLDER: assembly file path: /public{finalAssembly.cadPath} */}
               <a
                 href={finalAssembly.cadPath}
                 download
@@ -159,7 +137,6 @@ export default function PlanetaryGearPage() {
             >
               {/* Part Image */}
               <div className="w-full md:w-1/2 aspect-[4/3] bg-brand-bg-dark border border-brand-bg-card rounded-2xl overflow-hidden relative flex items-center justify-center">
-                {/* PLACEHOLDER: part image path: /public{part.img} */}
                 <img
                   src={part.img}
                   alt={part.title}
@@ -167,7 +144,7 @@ export default function PlanetaryGearPage() {
                 />
               </div>
 
-              {/* Part Details & Note */}
+              {/* Part Details */}
               <div className="w-full md:w-1/2 flex flex-col gap-4">
                 <div>
                   <span className="text-xs font-bold text-brand-accent-secondary uppercase tracking-wider block mb-1">
@@ -181,19 +158,8 @@ export default function PlanetaryGearPage() {
                   </p>
                 </div>
 
-                {/* Quick note to the side */}
-                <div className="bg-brand-bg-card/40 border border-brand-bg-card/80 p-4 rounded-xl">
-                  <span className="text-xs font-bold text-brand-text-primary uppercase tracking-wide block mb-1">
-                    Design Note
-                  </span>
-                  <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed">
-                    {part.note}
-                  </p>
-                </div>
-
                 {/* CAD File Download */}
                 <div>
-                  {/* PLACEHOLDER: part file path: /public{part.cadPath} */}
                   <a
                     href={part.cadPath}
                     download
