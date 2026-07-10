@@ -1,21 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Outfit", "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "Space Mono", monospace;
   
-  --color-brand-bg-dark: #0B0F19;
-  --color-brand-bg-card: #0F172A;
-  --color-brand-accent-primary: #38BDF8;
-  --color-brand-accent-secondary: #818CF8;
-  --color-brand-text-primary: #FFFFFF;
-  --color-brand-text-secondary: #E2E8F0;
-  --color-brand-text-muted: #94A3B8;
+  --color-brand-bg-dark: #0A0A0C;
+  --color-brand-bg-card: #0F0F12;
+  --color-brand-accent-primary: #FF5A1F;      /* Safety/Drafting Orange */
+  --color-brand-accent-secondary: #22C55E;    /* Caliper/Laser Green */
+  --color-brand-text-primary: #F8FAFC;
+  --color-brand-text-secondary: #CBD5E1;
+  --color-brand-text-muted: #64748B;
+  --color-brand-border: #1E1E24;
 }
 
 /* Base resets & global styles */
 body {
-  background-color: #0B0F19; /* fallback in case variable is not loaded */
   background-color: var(--color-brand-bg-dark);
+  /* Subtly textured technical drafting sheet grid background */
+  background-image: 
+    linear-gradient(rgba(255, 90, 31, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 90, 31, 0.015) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--color-brand-text-secondary);
   font-family: var(--font-sans);
   margin: 0;
@@ -24,11 +30,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom animations */
+/* Custom engineering animations */
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -37,5 +48,24 @@ body {
 }
 
 .animate-page-enter {
-  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom engineering borders and technical marks */
+.blueprint-border {
+  border: 1px solid var(--color-brand-border);
+}
+
+.blueprint-header-line {
+  position: relative;
+}
+
+.blueprint-header-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: var(--color-brand-accent-primary);
+  animation: drawLine 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

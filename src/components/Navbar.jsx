@@ -16,15 +16,16 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-brand-bg-card bg-brand-bg-dark/80 backdrop-blur-md transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full border-b border-brand-border bg-brand-bg-dark/90 backdrop-blur-md font-mono">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Brand/Logo */}
         <Link 
           to="/" 
           onClick={closeMenu}
-          className="font-heading text-xl font-bold tracking-tight text-brand-text-primary transition-colors hover:text-brand-accent-primary z-50"
+          className="text-sm font-bold tracking-widest text-brand-text-primary transition-colors hover:text-brand-accent-primary z-50 flex items-center gap-2"
         >
-          {profileData.name}
+          <span className="text-brand-accent-primary">[τ]</span>
+          {profileData.name.toUpperCase()}
         </Link>
 
         {/* Desktop Navigation */}
@@ -34,10 +35,10 @@ export default function Navbar() {
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `font-medium text-sm transition-colors duration-200 ${
+                `text-xs uppercase tracking-widest font-semibold transition-all duration-200 ${
                   isActive
-                    ? "text-brand-accent-primary"
-                    : "text-brand-text-secondary hover:text-brand-text-primary"
+                    ? "text-brand-accent-primary border-b border-brand-accent-primary pb-1"
+                    : "text-brand-text-secondary hover:text-brand-text-primary pb-1"
                 }`
               }
             >
@@ -50,26 +51,26 @@ export default function Navbar() {
         <button
           onClick={toggleMenu}
           type="button"
-          className="relative flex h-10 w-10 flex-col items-center justify-center rounded-lg text-brand-text-secondary hover:text-brand-text-primary focus:outline-none md:hidden z-50"
+          className="relative flex h-10 w-10 flex-col items-center justify-center rounded border border-brand-border text-brand-text-secondary hover:text-brand-text-primary focus:outline-none md:hidden z-50"
           aria-expanded={isOpen}
           aria-label="Toggle navigation menu"
         >
           <div className="flex w-5 flex-col gap-1.5 transition-all duration-300">
             {/* Top Line */}
             <span
-              className={`h-0.5 w-5 rounded-full bg-current transition-all duration-300 ${
+              className={`h-0.5 w-5 bg-current transition-all duration-300 ${
                 isOpen ? "translate-y-2 rotate-45" : ""
               }`}
             />
             {/* Middle Line */}
             <span
-              className={`h-0.5 w-5 rounded-full bg-current transition-all duration-300 ${
+              className={`h-0.5 w-5 bg-current transition-all duration-300 ${
                 isOpen ? "opacity-0" : ""
               }`}
             />
             {/* Bottom Line */}
             <span
-              className={`h-0.5 w-5 rounded-full bg-current transition-all duration-300 ${
+              className={`h-0.5 w-5 bg-current transition-all duration-300 ${
                 isOpen ? "-translate-y-2 -rotate-45" : ""
               }`}
             />
@@ -77,9 +78,9 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu Panel - Explicit h-screen and solid bg-brand-bg-dark for complete layout isolation */}
+      {/* Mobile Menu Panel */}
       <div
-        className={`fixed inset-0 h-screen w-screen z-40 bg-brand-bg-dark backdrop-blur-md transition-all duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-0 h-screen w-screen z-40 bg-brand-bg-dark/95 backdrop-blur-md transition-all duration-300 ease-in-out md:hidden ${
           isOpen 
             ? "opacity-100 pointer-events-auto translate-y-0" 
             : "opacity-0 pointer-events-none -translate-y-10"
@@ -92,9 +93,9 @@ export default function Navbar() {
               to={link.path}
               onClick={closeMenu}
               className={({ isActive }) =>
-                `text-2xl font-medium tracking-wide transition-all duration-300 ${
+                `text-xl uppercase tracking-widest font-semibold transition-all duration-300 ${
                   isActive
-                    ? "text-brand-accent-primary scale-105"
+                    ? "text-brand-accent-primary"
                     : "text-brand-text-secondary hover:text-brand-text-primary"
                 }`
               }

@@ -51,46 +51,49 @@ export default function PlanetaryGearPage() {
   return (
     <div className="animate-page-enter max-w-5xl mx-auto flex flex-col gap-16 pb-12">
       {/* Header and Back Link */}
-      <div>
+      <div className="border-b border-brand-border pb-6">
         <Link
           to="/projects"
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-accent-primary hover:text-brand-accent-secondary mb-3 transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold font-mono text-brand-accent-primary hover:text-brand-accent-primary/80 mb-4 transition-colors"
         >
-          <svg className="w-4 h-4 fill-current rotate-180" viewBox="0 0 24 24">
-            <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z" />
-          </svg>
-          Back to Projects
+          &lt;-- RETURN_TO_PROJECTS
         </Link>
-        <h2 className="text-4xl font-bold font-heading text-brand-text-primary tracking-tight">
-          Planetary Gear Design
+        <h2 className="text-xl font-bold font-mono text-brand-text-primary tracking-widest uppercase">
+          // PLANETARY_GEAR_SYSTEM
         </h2>
-        <p className="text-brand-text-muted text-sm mt-1">
-          SolidWorks CAD Modeling, Kinematic Mate Simulation, & FEA Studies
+        <p className="text-brand-text-muted text-xs font-mono mt-1">
+          REF: [CAD_MODELING_&_KINEMATIC_MATES]
         </p>
       </div>
 
       {/* SECTION 1: HERO FINAL ASSEMBLY (Visible first) */}
-      <section className="bg-brand-bg-card border border-brand-bg-card/50 rounded-3xl p-6 md:p-8 shadow-xl">
+      <section className="bg-brand-bg-card border border-brand-border rounded-none p-6 md:p-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Image */}
-          <div className="lg:col-span-7 aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[320px] bg-brand-bg-dark rounded-2xl border border-brand-bg-card overflow-hidden relative flex items-center justify-center">
+          <div className="lg:col-span-7 aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[320px] bg-brand-bg-dark border border-brand-border p-1.5 overflow-hidden relative flex items-center justify-center">
+            {/* Corner cropmarks */}
+            <span className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-brand-accent-primary" />
+            <span className="absolute top-0 right-0 w-2.5 h-2.5 border-t border-r border-brand-accent-primary" />
+            <span className="absolute bottom-0 left-0 w-2.5 h-2.5 border-b border-l border-brand-accent-primary" />
+            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 border-b border-r border-brand-accent-primary" />
+            
             <img
               src={finalAssembly.img}
               alt={finalAssembly.title}
-              className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+              className="w-full h-full object-cover filter grayscale contrast-110"
             />
           </div>
 
           {/* Description & Downloads */}
           <div className="lg:col-span-5 flex flex-col gap-5">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-accent-primary">
-                Overview & Kinematics
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-accent-primary font-mono">
+                // SYSTEM_OVERVIEW
               </span>
-              <h3 className="text-2xl md:text-3xl font-bold text-brand-text-primary mt-1 mb-3">
-                {finalAssembly.title}
+              <h3 className="text-md font-bold font-mono text-brand-text-primary uppercase tracking-wider mt-1 mb-3">
+                [01] {finalAssembly.title}
               </h3>
-              <p className="text-brand-text-secondary text-sm md:text-base leading-relaxed mb-4">
+              <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed mb-4">
                 {finalAssembly.desc}
               </p>
             </div>
@@ -100,12 +103,12 @@ export default function PlanetaryGearPage() {
               <a
                 href={finalAssembly.cadPath}
                 download
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-accent-primary to-brand-accent-secondary hover:from-brand-accent-secondary hover:to-brand-accent-primary text-brand-text-primary font-bold px-5 py-2.5 rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 text-sm"
+                className="inline-flex items-center gap-2 bg-brand-accent-primary hover:bg-brand-accent-primary/80 text-brand-bg-dark font-mono font-bold text-xs uppercase tracking-widest px-5 py-2.5 rounded-none transition-all duration-200"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                   <path d="M5 20h14v-2H5v2zm7-18L5.33 11h4V16h5.34v-5h4L12 2z" />
                 </svg>
-                {finalAssembly.cadLabel}
+                download_assembly_file
               </a>
             </div>
           </div>
@@ -113,12 +116,12 @@ export default function PlanetaryGearPage() {
       </section>
 
       {/* Separator / Header for Parts */}
-      <div className="border-t border-brand-bg-card/45 pt-8">
-        <h3 className="text-2xl font-bold text-brand-text-primary font-heading">
-          Individual System Components
+      <div className="border-t border-brand-border pt-8">
+        <h3 className="text-md font-bold text-brand-text-primary font-mono uppercase tracking-widest">
+          // SYSTEM_COMPONENTS_BREAKDOWN
         </h3>
-        <p className="text-brand-text-muted text-sm mt-1">
-          Scroll down to explore the model build steps and CAD part configurations.
+        <p className="text-brand-text-muted text-xs font-mono mt-1">
+          Explore the individual build steps and CAD part configurations below.
         </p>
       </div>
 
@@ -136,24 +139,30 @@ export default function PlanetaryGearPage() {
               }`}
             >
               {/* Part Image */}
-              <div className="w-full md:w-1/2 aspect-[4/3] bg-brand-bg-dark border border-brand-bg-card rounded-2xl overflow-hidden relative flex items-center justify-center">
+              <div className="w-full md:w-1/2 aspect-[4/3] bg-brand-bg-dark border border-brand-border p-1.5 overflow-hidden relative flex items-center justify-center">
+                {/* Corner cropmarks */}
+                <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-brand-accent-primary" />
+                <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-brand-accent-primary" />
+                <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-brand-accent-primary" />
+                <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-brand-accent-primary" />
+                
                 <img
                   src={part.img}
                   alt={part.title}
-                  className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover filter grayscale contrast-110"
                 />
               </div>
 
               {/* Part Details */}
               <div className="w-full md:w-1/2 flex flex-col gap-4">
                 <div>
-                  <span className="text-xs font-bold text-brand-accent-secondary uppercase tracking-wider block mb-1">
-                    {part.subtitle}
+                  <span className="text-xs font-bold text-brand-accent-primary uppercase tracking-widest font-mono block mb-1">
+                    // {part.subtitle.toUpperCase()}
                   </span>
-                  <h4 className="text-xl md:text-2xl font-bold text-brand-text-primary font-heading">
-                    {part.title}
+                  <h4 className="text-md font-bold text-brand-text-primary font-mono uppercase tracking-wider">
+                    [PART_0{idx+1}] {part.title}
                   </h4>
-                  <p className="text-brand-text-secondary text-sm md:text-base leading-relaxed mt-3">
+                  <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed mt-3 font-sans">
                     {part.desc}
                   </p>
                 </div>
@@ -163,12 +172,12 @@ export default function PlanetaryGearPage() {
                   <a
                     href={part.cadPath}
                     download
-                    className="inline-flex items-center gap-1.5 text-sm font-bold text-brand-accent-secondary hover:text-brand-accent-primary transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold font-mono text-brand-accent-primary hover:text-brand-accent-primary/80 transition-colors uppercase tracking-wider"
                   >
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                       <path d="M5 20h14v-2H5v2zm7-18L5.33 11h4V16h5.34v-5h4L12 2z" />
                     </svg>
-                    {part.cadLabel}
+                    download_source_file
                   </a>
                 </div>
               </div>

@@ -5,11 +5,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-brand-bg-card bg-brand-bg-dark/50 py-8 text-center text-brand-text-secondary">
+    <footer className="w-full border-t border-brand-border bg-brand-bg-dark/80 py-8 text-center text-brand-text-secondary font-mono">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
         {/* Copyright notice - must contain exact placeholders */}
-        <div className="text-sm tracking-wide">
-          &copy; {currentYear} <span className="text-brand-text-primary font-medium">{profileData.name}</span>. All rights reserved.
+        <div className="text-xs tracking-wider">
+          &copy; {currentYear} <span className="text-brand-text-primary font-bold">{profileData.name.toUpperCase()}</span>. SYS_REF: [{currentYear}]
         </div>
 
         {/* Social Icons Links */}
