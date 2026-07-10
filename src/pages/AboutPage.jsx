@@ -21,7 +21,7 @@ export default function AboutPage() {
             <img
               src={profileData.profileImagePlaceholder}
               alt={profileData.name}
-              className="w-full h-full object-cover filter grayscale contrast-110"
+              className="w-full h-full object-cover"
             />
           </div>
           

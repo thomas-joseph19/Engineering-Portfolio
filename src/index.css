@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "Space Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
   
   --color-brand-bg-dark: #0A0A0C;
   --color-brand-bg-card: #0F0F12;
@@ -28,6 +28,12 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.02em; /* Slightly wider default letters for readability */
+}
+
+/* Add custom tracking to monospaced text to prevent crowding */
+.font-mono {
+  letter-spacing: 0.05em;
 }
 
 /* Custom engineering animations */
