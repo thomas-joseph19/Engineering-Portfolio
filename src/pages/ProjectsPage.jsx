@@ -25,7 +25,7 @@ export default function ProjectsPage() {
             <img
               src="assets/images/projects/final-product-PLACEHOLDER.jpg"
               alt="Planetary Gear Assembly"
-              className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-300"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
             <img
               src="assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg"
               alt="Robotic Arm Assembly"
-              className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-300"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -137,7 +137,7 @@ export default function ProjectsPage() {
             <img
               src="assets/images/projects/l1-rocket-final-PLACEHOLDER.jpg"
               alt="L1 HPR Certification Rocket"
-              className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-300"
+              className="w-full h-full object-cover"
             />
           </div>
 

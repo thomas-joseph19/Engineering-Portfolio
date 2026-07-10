@@ -142,7 +142,7 @@ export default function L1RocketPage() {
             <img
               src="assets/images/projects/l1-rocket-final-PLACEHOLDER.jpg"
               alt="L1 HPR Rocket Final Build"
-              className="w-full h-full object-cover filter grayscale contrast-115 hover:grayscale-0 transition-all duration-300"
+              className="w-full h-full object-cover"
             />
           </div>
 

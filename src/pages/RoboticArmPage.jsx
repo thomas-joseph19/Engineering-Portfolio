@@ -104,7 +104,7 @@ export default function RoboticArmPage() {
             <img
               src={finishedProduct.img}
               alt={finishedProduct.title}
-              className="w-full h-full object-cover filter grayscale contrast-110"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -173,7 +173,7 @@ export default function RoboticArmPage() {
                 <img
                   src={part.img}
                   alt={part.title}
-                  className="w-full h-full object-cover filter grayscale contrast-110"
+                  className="w-full h-full object-cover"
                 />
               </div>
 

@@ -80,7 +80,7 @@ export default function PlanetaryGearPage() {
             <img
               src={finalAssembly.img}
               alt={finalAssembly.title}
-              className="w-full h-full object-cover filter grayscale contrast-110"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -149,7 +149,7 @@ export default function PlanetaryGearPage() {
                 <img
                   src={part.img}
                   alt={part.title}
-                  className="w-full h-full object-cover filter grayscale contrast-110"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
