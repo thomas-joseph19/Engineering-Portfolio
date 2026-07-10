@@ -129,7 +129,64 @@ export default function ProjectsPage() {
           </div>
         </div>
 
+        {/* Project Card: L1 Rocket */}
+        <div className="bg-brand-bg-card border border-brand-border rounded-none overflow-hidden grid grid-cols-1 md:grid-cols-3">
+          
+          {/* Project Image Container */}
+          <div className="md:col-span-1 h-56 md:h-auto bg-brand-bg-dark border-r border-brand-border relative flex items-center justify-center overflow-hidden p-2">
+            <img
+              src="assets/images/projects/l1-rocket-final-PLACEHOLDER.jpg"
+              alt="L1 HPR Certification Rocket"
+              className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+
+          {/* Project Details */}
+          <div className="md:col-span-2 p-6 md:p-8 flex flex-col justify-between gap-6">
+            <div>
+              <h3 className="text-md font-bold font-mono text-brand-text-primary mb-3 uppercase tracking-wider">
+                [PROJECT_03] L1 Rocket Build
+              </h3>
+              
+              <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed mb-6 font-sans">
+                A high power certification rocket constructed and flown with KXR UCF.
+              </p>
+
+              {/* Showcase Design Skills */}
+              <div className="flex flex-col gap-2 font-mono">
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-accent-primary">
+                  // Specifications
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {["High Power Rocketry", "Aerospace Systems", "Flight Operations"].map((skill, idx) => (
+                    <span
+                      key={idx}
+                      className="text-xs px-2 py-1 bg-brand-bg-dark text-brand-text-secondary border border-brand-border font-mono"
+                    >
+                      {skill.toLowerCase()}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Link Button */}
+            <div>
+              <Link
+                to="/projects/l1-rocket"
+                className="inline-flex items-center gap-1.5 bg-brand-accent-primary hover:bg-brand-accent-primary/80 text-brand-bg-dark font-mono font-bold text-xs uppercase tracking-widest px-5 py-2.5 rounded-none transition-all duration-200"
+              >
+                view_detailed_steps
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );
 }
+
