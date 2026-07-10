@@ -108,53 +108,6 @@ export default function HullDesignPage() {
           </div>
         </div>
       </section>
-
-      {/* Expenses Table */}
-      <section className="bg-brand-bg-card border border-brand-border p-6 md:p-8">
-        <h3 className="text-xs font-bold font-mono text-brand-text-primary uppercase tracking-wider mb-4">
-          // PROJECT_EXPENSES
-        </h3>
-        <div className="overflow-x-auto">
-          <table className="w-full font-mono text-xs text-left border-collapse">
-            <thead>
-              <tr className="border-b border-brand-border text-brand-text-muted">
-                <th className="py-2 pr-4 uppercase">Item Description</th>
-                <th className="py-2 pr-4 text-right uppercase">Cost</th>
-              </tr>
-            </thead>
-            <tbody className="text-brand-text-secondary">
-              <tr className="border-b border-brand-border/40">
-                <td className="py-2 pr-4">Yard Sale Signs (Chassis Sheets)</td>
-                <td className="py-2 pr-4 text-right">$4.98</td>
-              </tr>
-              <tr className="border-b border-brand-border/40">
-                <td className="py-2 pr-4">LiPo Battery (1)</td>
-                <td className="py-2 pr-4 text-right">$10.69</td>
-              </tr>
-              <tr className="border-b border-brand-border/40">
-                <td className="py-2 pr-4">Drive Shaft & Propeller</td>
-                <td className="py-2 pr-4 text-right">$15.96</td>
-              </tr>
-              <tr className="border-b border-brand-border/40">
-                <td className="py-2 pr-4">Fireproof LiPo Battery Bag</td>
-                <td className="py-2 pr-4 text-right">$6.99</td>
-              </tr>
-              <tr className="border-b border-brand-border/40">
-                <td className="py-2 pr-4">1 Ounce Weights (x12 Counterweights)</td>
-                <td className="py-2 pr-4 text-right">$3.32</td>
-              </tr>
-              <tr className="border-b border-brand-border/40">
-                <td className="py-2 pr-4">2x 2-Liter Soda Bottles</td>
-                <td className="py-2 pr-4 text-right">$0.20</td>
-              </tr>
-              <tr className="font-bold text-brand-text-primary">
-                <td className="py-3 pr-4">TOTAL EXPENDITURE</td>
-                <td className="py-3 pr-4 text-right text-brand-accent-primary">$42.14</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
     </div>
   );
 }
