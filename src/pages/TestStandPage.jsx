@@ -77,7 +77,7 @@ export default function TestStandPage() {
       num: "11",
       title: "Final Assembly",
       subtitle: "Full Test Stand Integration",
-      desc: "I merged the validated mounting assembly back into the complete structure. The final assembly contains all custom-designed components, including the frame, bracing, isolated mounting clamp, and the recreated load cell model, representing a complete conceptual engineering test rig.",
+      desc: "I merged the validated mounting assembly back into the complete structure. Because the analysis isolated the flexing issue to the lower mounting plate, I was able to save on material by removing the vertical support beams added in Phase 6. The final assembly contains all custom-designed components, including the frame, bracing, isolated mounting clamp, and the recreated load cell model, representing a complete conceptual engineering test rig.",
       img: "assets/images/projects/test-stand/test-stand-final-assembly.png"
     },
     {
