@@ -7,97 +7,85 @@ export default function TestStandPage() {
       num: "01",
       title: "Define the Design Requirements",
       subtitle: "Envelope & Constraints Formulation",
-      desc: "To establish a realistic design envelope without focusing on a single proprietary engine, I researched publicly available specifications for 15 kN-class rocket engines. This allowed me to approximate core physical parameters, overall dimensions, plumbing space requirements, and mounting constraints. The resulting boundary conditions defined the size and mechanical interfaces of the test stand.",
-      img: null,
-      highlight: "DESIGN BOUNDARY: ~15 kN thrust vector, standard bolt mounting interface, open aft-section for exhaust gas expansion."
+      desc: "To establish a realistic design envelope without focusing on a single proprietary engine, I researched publicly available specifications for 15 kN-class rocket engines. This allowed me to approximate physical parameters, overall dimensions, and mounting constraints.",
+      img: null
     },
     {
       num: "02",
       title: "Recreate the Load Cell",
       subtitle: "CAD Recreation of Sensor Geometry",
-      desc: "Thrust measurement accuracy depends on a direct, unconstrained load path. I selected a representative commercial S-type tension/compression load cell rated for the expected forces. Using manufacturer datasheets, I modeled the sensor in SolidWorks to ensure all mounting threads and clearances were exact. This allowed the load cell to be integrated directly into the structural assembly and FEA contacts.",
-      img: "assets/images/projects/test-stand/test-stand-load-cell.png",
-      highlight: "SENSOR SPECS: S-Type load cell, high-capacity rating, dual-thread engagement for inline force transmission."
+      desc: "Thrust measurement accuracy depends on a direct, unconstrained load path. I selected a public model of a 50kn load cell to replicate simply into SolidWorks. This allowed the load cell to be integrated directly into the structural assembly and FEA contacts.",
+      img: "assets/images/projects/test-stand/test-stand-load-cell.png"
     },
     {
       num: "03",
       title: "Material Selection",
       subtitle: "Structural Alloy Evaluation",
       desc: "I selected Alloy Stainless Steel for all structural members and weldments. In outdoor rocket engine test environments, the stand is subjected to cryogenic thermal shock, corrosive combustion products, and high vibration. Stainless steel provides high yield strength, excellent weldability, and resistance to environmental stress cracking compared to carbon steel or aluminum.",
-      img: null,
-      highlight: "MATERIAL DECISION: Alloy Stainless Steel (Yield Strength ~250-300 MPa, high corrosion resistance)."
+      img: null
     },
     {
       num: "04",
       title: "Initial Structural Design",
       subtitle: "Weldment Framework & Load Path Layout",
-      desc: "The first iteration focused on a modular welded frame. I designed a space-frame truss structure to hold the engine vertically, routing the primary thrust vector through the top clamp, down the load cell, and into the surrounding chassis. Every frame tube and plate was custom modeled, aiming to balance overall weight with structural stiffness.",
-      img: "assets/images/projects/test-stand/test-stand-initial-frame.png",
-      highlight: "CONFIGURATION: Vertical test orientation, overhead load cell mount, four-legged stable base."
+      desc: "The first iteration focused on a modular welded frame. I designed a space-frame truss structure to hold the engine vertically, routing the primary thrust vector through the top clamp, down the load cell, and into the surrounding chassis.",
+      img: "assets/images/projects/test-stand/test-stand-initial-frame.png"
     },
     {
       num: "05",
       title: "Initial Structural Analysis",
       subtitle: "Baseline Static FEA (20 kN Applied Load)",
-      desc: "I conducted a static Finite Element Analysis in SolidWorks Simulation. To embed a safety factor, I applied a 20 kN static load—intentionally exceeding the 15 kN engine thrust rating by 33%. The results revealed excessive displacement and stress concentrations, particularly around the upper portion of the frame where bending moments were highest.",
-      img: "assets/images/projects/test-stand/test-stand-initial-fea.png",
-      highlight: "FEA OUTCOME: Heavy deformation (red zone) detected at upper joints. Rigid support required."
+      desc: "I conducted a static Finite Element Analysis in SolidWorks Simulation. To embed a safety factor, I applied a 20 kN static load, intentionally exceeding the 15 kN engine thrust rating by 33%. The results revealed excessive displacement and stress concentrations, particularly around the upper portion of the frame where bending moments were highest.",
+      img: "assets/images/projects/test-stand/test-stand-initial-fea.png"
     },
     {
       num: "06",
       title: "First Design Revision",
       subtitle: "Reinforcing the Upper Structure",
-      desc: "To combat the upper frame bending, I revised the model by adding heavy triangular corner gussets and lateral cross-bracing to the upper members. The goal was to convert bending loads into axial loads, distributing the force down the vertical support columns.",
-      img: "assets/images/projects/test-stand/test-stand-second-frame.png",
-      highlight: "MODIFICATIONS: Dual-gusset upper plates, angled truss reinforcement, thickened top plate."
+      desc: "To combat the upper frame bending, I revised the model by adding vertical supports under diagonal members. The goal was to convert bending loads into axial loads, distributing the force down the vertical support columns.",
+      img: "assets/images/projects/test-stand/test-stand-second-frame.png"
     },
     {
       num: "07",
       title: "Second Structural Analysis",
       subtitle: "Post-Reinforcement FEA Verification",
       desc: "I ran the static simulation again under the identical 20 kN load case to verify the change. While the upper frame showed slightly improved stiffness, the overall displacement remained unacceptably high. The simulation indicated that reinforcing the top was only masking a deeper structural weakness.",
-      img: "assets/images/projects/test-stand/test-stand-second-fea.png",
-      highlight: "FEA OUTCOME: Deformation persisted. Stress contour mapping showed a major pivot point at the base."
+      img: "assets/images/projects/test-stand/test-stand-second-fea.png"
     },
     {
       num: "08",
       title: "Root Cause Investigation",
       subtitle: "Subassembly Isolation & Bounded FEA",
       desc: "To locate the true bottleneck, I isolated the lower mounting assembly and analyzed it independently. By removing the main frame from the equation and applying boundary fixtures directly to the mounting plate, I discovered that the mounting plate was flexing significantly. This flexing acted as a leverage point, magnifying the deformation through the upper assembly.",
-      img: "assets/images/projects/test-stand/test-stand-lower-assembly-fea.png",
-      highlight: "DIAGNOSTIC: The lower mounting plate was acting as a cantilever spring. Root cause isolated."
+      img: "assets/images/projects/test-stand/test-stand-lower-assembly-fea.png"
     },
     {
       num: "09",
       title: "Redesign the Mounting System",
       subtitle: "Thickened Plate & High-Stiffness Engine Clamp",
       desc: "I redesigned the lower engine clamp and mounting plate. I increased the mounting plate thickness and added gusseted webs to prevent plate warping. Additionally, I redesigned the engine clamp to wrap more securely around the engine collar, distributing the thrust load more uniformly over a larger surface area.",
-      img: "assets/images/projects/test-stand/test-stand-redesigned-clamp.png",
-      highlight: "DESIGN REVISION: Heavy-duty clamp profile, double-thickness mounting flange, direct load-cell integration."
+      img: "assets/images/projects/test-stand/test-stand-redesigned-clamp.png"
     },
     {
       num: "10",
       title: "Validate the New Mounting Assembly",
       subtitle: "Isolated Assembly FEA Verification",
       desc: "I ran a static FEA on the newly redesigned lower assembly. The displacement plots showed that the thick plate and robust clamp successfully eliminated the localized flexing, reducing displacement in this subassembly to negligible values. The load path was now structurally sound.",
-      img: "assets/images/projects/test-stand/test-stand-redesigned-clamp-fea.png",
-      highlight: "FEA OUTCOME: Displacement reduced by over 80% in the mounting zone. Design validated."
+      img: "assets/images/projects/test-stand/test-stand-redesigned-clamp-fea.png"
     },
     {
       num: "11",
       title: "Final Assembly",
       subtitle: "Full Test Stand Integration",
-      desc: "I merged the validated mounting assembly back into the complete structure. The final assembly contains all custom-designed components, including the frame, bracing, gussets, isolated mounting clamp, and the recreated load cell model, representing a complete conceptual engineering test rig.",
-      img: "assets/images/projects/test-stand/test-stand-final-assembly.png",
-      highlight: "ASSEMBLY COMPLETED: Full integration of structural weldment, sensor, and engine interface."
+      desc: "I merged the validated mounting assembly back into the complete structure. The final assembly contains all custom-designed components, including the frame, bracing, isolated mounting clamp, and the recreated load cell model, representing a complete conceptual engineering test rig.",
+      img: "assets/images/projects/test-stand/test-stand-final-assembly.png"
     },
     {
       num: "12",
       title: "Final Structural Validation",
       subtitle: "Full Assembly Static FEA",
       desc: "I ran a final full-assembly static structural simulation using the 20 kN design load. The displacement plot showed excellent stiffness, with minimal, safe deformation throughout the entire structure. The iterative analysis proved that targeted structural changes resolved the root issues far more effectively than blind over-design.",
-      img: "assets/images/projects/test-stand/test-stand-final-fea.png",
-      highlight: "FINAL FEA OUTCOME: Structurally sound, minimal deformation, factor of safety verified under 20 kN."
+      img: "assets/images/projects/test-stand/test-stand-final-fea.png"
     }
   ];
 
@@ -112,7 +100,7 @@ export default function TestStandPage() {
     },
     {
       title: "Direct Sensor Path Integration",
-      desc: "Recreated the S-type load cell in CAD and integrated it directly into assembly constraints to ensure FEA contact definitions accurately modeled the thrust load path."
+      desc: "Recreated the load cell in CAD and integrated it directly into assembly constraints to ensure FEA contact definitions accurately modeled the thrust load path."
     },
     {
       title: "Iterative Analysis Over Blind Overdesign",
@@ -124,7 +112,7 @@ export default function TestStandPage() {
     },
     {
       title: "Custom Component Fabrication",
-      desc: "Designed and modeled every single bracket, gusset, plate, and weldment member from scratch, ensuring a complete and custom CAD repository."
+      desc: "Designed and modeled every single bracket, plate, and weldment member from scratch, ensuring a complete and custom CAD repository."
     }
   ];
 
@@ -188,7 +176,7 @@ export default function TestStandPage() {
                 15 kN Engine Test Stand & FEA
               </h3>
               <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed font-sans mb-4">
-                This project covers the design and optimization of a conceptual structural test stand intended to support and measure the thrust of a 15 kN-class rocket engine. The core objective was to create a rigid structure capable of transmitting engine thrust through a load cell while minimizing structural deformation.
+                This was a self-directed engineering project created to develop experience in structural design, CAD modeling, and finite element analysis. The objective was to design and iteratively optimize a conceptual test stand capable of supporting the loading requirements of a 15 kN-class rocket engine.
               </p>
               <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed font-sans mb-4">
                 Developed entirely in SolidWorks, the frame was optimized using iterative Finite Element Analysis (FEA) under a conservative 20 kN static load to ensure safety margins and high rig stiffness.
@@ -213,6 +201,19 @@ export default function TestStandPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Project Scope Section */}
+      <section className="bg-brand-bg-card border border-brand-border p-6 md:p-8">
+        <span className="text-xs font-bold uppercase tracking-wider text-brand-accent-primary font-mono">
+          // PROJECT_SCOPE
+        </span>
+        <h3 className="text-md font-bold font-mono text-brand-text-primary uppercase tracking-wider mt-1 mb-3">
+          Project Scope
+        </h3>
+        <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed font-sans">
+          This project was independently conceived and completed to strengthen my mechanical design and simulation skills. Rather than designing for a specific engine, the test stand was developed around the expected loading and packaging requirements of a representative 15 kN-class rocket engine using publicly available reference information.
+        </p>
       </section>
 
       {/* Engineering Design Process Timeline */}
@@ -254,11 +255,6 @@ export default function TestStandPage() {
                     <p className="text-brand-text-secondary text-xs md:text-sm leading-relaxed font-sans whitespace-pre-line">
                       {step.desc}
                     </p>
-                    <div className="border-l-2 border-brand-accent-primary pl-3 py-1 bg-brand-bg-dark/40">
-                      <p className="text-brand-text-secondary text-[11px] font-mono leading-relaxed">
-                        <span className="text-brand-accent-primary font-bold">LOG:</span> {step.highlight}
-                      </p>
-                    </div>
                   </div>
 
                   {/* Right Column: Image */}
