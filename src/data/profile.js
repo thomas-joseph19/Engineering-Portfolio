@@ -94,7 +94,7 @@ export const profileData = {
   },
   contact: {
     email: "thomas.joseph19@outlook.com",
-    linkedin: "https://linkedin.com/in/thomas-joseph-ucf",
+    linkedin: "https://www.linkedin.com/in/thomas-joseph-5a01072a7/",
     github: "https://github.com/thomas-joseph19"
   }
 };
