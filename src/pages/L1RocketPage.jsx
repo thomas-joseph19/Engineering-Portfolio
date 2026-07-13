@@ -140,7 +140,7 @@ export default function L1RocketPage() {
             <span className="absolute bottom-0 right-0 w-2.5 h-2.5 border-b border-r border-brand-accent-primary" />
             
             <img
-              src="assets/images/projects/l1-rocket-final-PLACEHOLDER.jpg"
+              src="assets/images/projects/l1-rocket/l1-rocket-final-PLACEHOLDER.jpg"
               alt="L1 HPR Rocket Final Build"
               className="w-full h-full object-cover"
             />

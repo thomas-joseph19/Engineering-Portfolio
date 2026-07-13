@@ -49,7 +49,7 @@ export default function HullDesignPage() {
             <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-brand-accent-primary" />
             <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-brand-accent-primary" />
             <img
-              src="assets/images/projects/boat-cad-PLACEHOLDER.jpg"
+              src="assets/images/projects/hull-design/boat-cad-PLACEHOLDER.png"
               alt="3D CAD Design in Onshape"
               className="w-full h-full object-cover"
             />
@@ -67,7 +67,7 @@ export default function HullDesignPage() {
             <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-brand-accent-primary" />
             <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-brand-accent-primary" />
             <img
-              src="assets/images/projects/boat-final-PLACEHOLDER.jpg"
+              src="assets/images/projects/hull-design/boat-final-PLACEHOLDER.png"
               alt="Final Built Pontoon Boat"
               className="w-full h-full object-cover"
             />

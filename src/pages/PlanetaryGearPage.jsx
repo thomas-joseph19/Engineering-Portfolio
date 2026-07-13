@@ -7,8 +7,8 @@ export default function PlanetaryGearPage() {
     title: "Final Assembly",
     subtitle: "SolidWorks Kinetic Simulation & Mate System",
     desc: "The final planetary gear system assembly is created by aligning part components using strict mechanical constraints. Concentric mates position the sun gear, planet gears, and rotary carrier, while coincident mates align the planar faces. Finally, physical gear mates are configured between the sun-planet and planet-ring meshes to model true kinematic motion.",
-    img: "assets/images/projects/final-product-PLACEHOLDER.jpg",
-    cadPath: "assets/documents/projects/final-assembly-PLACEHOLDER.sldasm",
+    img: "assets/images/projects/planetary-gear/final-product-PLACEHOLDER.jpg",
+    cadPath: "assets/documents/projects/planetary-gear/final-assembly-PLACEHOLDER.SLDASM",
     cadLabel: "Download Assembly File (.sldasm)"
   };
 
@@ -18,32 +18,32 @@ export default function PlanetaryGearPage() {
       title: "1. Sun Gear",
       subtitle: "The Central Power Input",
       desc: "Designed using parametric equations to link the diametral pitch and number of teeth directly to design variables.",
-      img: "assets/images/projects/sun-gear-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/sun-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/planetary-gear/sun-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/planetary-gear/sun-gear-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Sun Gear Part (.sldprt)"
     },
     {
       title: "2. Planet Gears",
       subtitle: "The Translating Torque Nodes",
       desc: "Three planetary gears are distributed at equal 120° intervals around the central axis. These gears rotate on carrier pins while meshing simultaneously with the stationary outer ring gear and the rotating central sun gear.",
-      img: "assets/images/projects/planet-gear-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/planet-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/planetary-gear/planet-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/planetary-gear/planet-gear-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Planet Gear Part (.sldprt)"
     },
     {
       title: "3. Ring Gear",
       subtitle: "The Stationary Internal Ring",
       desc: "Features internal teeth profile cutting. Configured as the rigid external boundary of the gearbox.",
-      img: "assets/images/projects/ring-gear-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/ring-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/planetary-gear/ring-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/planetary-gear/ring-gear-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Ring Gear Part (.sldprt)"
     },
     {
       title: "4. Rotary Carrier",
       subtitle: "The Combined Torque Output Linkage",
       desc: "Constructed as a rigid plate holding three offset planet pins.",
-      img: "assets/images/projects/rotary-gear-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/rotary-gear-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/planetary-gear/rotary-gear-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/planetary-gear/rotary-gear-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Carrier Part (.sldprt)"
     }
   ];

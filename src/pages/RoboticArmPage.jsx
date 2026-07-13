@@ -7,8 +7,8 @@ export default function RoboticArmPage() {
     title: "Finished Product",
     subtitle: "SolidWorks 5-Axis Robotic Arm Assembly",
     desc: "The complete robotic arm assembly integrates all structural link profiles, joints, and actuation linkages. Set up using strict concentric, coincident, and limit distance mates in SolidWorks. Limit mates constrain the rotational ranges of motion for each joint to simulate real-world servo travel bounds.",
-    img: "assets/images/projects/robotic-arm-final-PLACEHOLDER.jpg",
-    cadPath: "assets/documents/projects/robotic-arm-final-PLACEHOLDER.sldasm",
+    img: "assets/images/projects/robotic-arm/robotic-arm-final-PLACEHOLDER.jpg",
+    cadPath: "assets/documents/projects/robotic-arm/robotic-arm-final-PLACEHOLDER.SLDASM",
     cadLabel: "Download Assembly File (.sldasm)"
   };
 
@@ -18,56 +18,56 @@ export default function RoboticArmPage() {
       title: "1. Base",
       subtitle: "The Structural Foundation",
       desc: "Designed as the heavy foundation mount containing structural ribs for stability and a large central recess. Housing for the main rotation servo and slip-ring cabling system.",
-      img: "assets/images/projects/robotic-arm-base-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-base-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-base-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-base-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Base Part (.sldprt)"
     },
     {
       title: "2. Arm Link 1",
       subtitle: "The Primary Vertical Link",
       desc: "Mounts to the base rotary plate and supports the elbow pivot actuator.",
-      img: "assets/images/projects/robotic-arm-link1-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-link1-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-link1-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-link1-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Link 1 Part (.sldprt)"
     },
     {
       title: "3. Arm Link 2",
       subtitle: "The Forearm Extension",
       desc: "A structural link bridging the elbow joint to the wrist.",
-      img: "assets/images/projects/robotic-arm-link2-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-link2-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-link2-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-link2-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Link 2 Part (.sldprt)"
     },
     {
       title: "4. Arm Link 3",
       subtitle: "The Wrist Joint Connector",
       desc: "A compact coupler connecting the wrist joint and the end-effector base.",
-      img: "assets/images/projects/robotic-arm-link3-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-link3-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-link3-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-link3-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Link 3 Part (.sldprt)"
     },
     {
       title: "5. Gripper Link",
       subtitle: "The End-Effector Coupling Plate",
       desc: "Interfaces the wrist pitch mechanism to the claw structure. Features mounting slots for direct micro-servo attachment and sensor bracket integration.",
-      img: "assets/images/projects/robotic-arm-gripper-link-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-gripper-link-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-gripper-link-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-gripper-link-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Gripper Link Part (.sldprt)"
     },
     {
       title: "6. Gripper Support",
       subtitle: "The Claw Chassis Mount",
       desc: "Dual-sided mounting frame providing rigid anchor points for both gripper fingers. Supports lateral load transfer during material grasping.",
-      img: "assets/images/projects/robotic-arm-gripper-support-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-gripper-support-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-gripper-support-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-gripper-support-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Gripper Support Part (.sldprt)"
     },
     {
       title: "7. Gripper Arm",
       subtitle: "The Actuated Grasp Finger",
       desc: "The actuated claw finger used for gripping objects.",
-      img: "assets/images/projects/robotic-arm-gripper-arm-PLACEHOLDER.jpg",
-      cadPath: "assets/documents/projects/robotic-arm-gripper-arm-PLACEHOLDER.sldprt",
+      img: "assets/images/projects/robotic-arm/robotic-arm-gripper-arm-PLACEHOLDER.jpg",
+      cadPath: "assets/documents/projects/robotic-arm/robotic-arm-gripper-arm-PLACEHOLDER.SLDPRT",
       cadLabel: "Download Gripper Arm Part (.sldprt)"
     }
   ];
